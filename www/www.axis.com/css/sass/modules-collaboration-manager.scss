@@ -1,0 +1,431 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+/* Interaction states
+----------------------------------*/
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border: 1px solid #3b90ce;
+	/*background: #3b90ce url(images/ui-bg_inset-soft_35_3b90ce_1x100.png) 50% 50% repeat-x;*/
+	background: white;
+	font-weight: normal;
+	/*color: #fff;*/
+	color: #4e4f51;
+}
+
+.ui-state-default a {
+	/*color: #fff;*/
+	color: #4e4f51;
+	text-decoration: none;
+	&:link, &:visited {
+		/*color: #fff;*/
+		color: #4e4f51;
+		text-decoration: none;
+	}
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+	border: 1px solid #e1e9be;
+	/*background: #3b90ce url(images/ui-bg_inset-soft_35_3b90ce_1x100.png) 50% 50% repeat-x;*/
+	/*background: #e1e9be url(images/ui-bg_highlight-soft_100_e1e9be_1x100.png) 50% 50% repeat-x;*/
+	font-weight: normal;
+	/*color: #444444;*/
+	color: #4e4f51;
+}
+
+.ui-state-hover a {
+	color: #444444;
+	text-decoration: none;
+	&:hover, &:link, &:visited {
+		color: #444444;
+		text-decoration: none;
+	}
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+	border: 1px solid #8b8e90;
+	background: #8b8e90 url(images/ui-bg_inset-hard_35_8b8e90_1x100.png) 50% 50% repeat-x;
+	font-weight: normal;
+	color: #fff;
+}
+
+.ui-state-active a {
+	/*color: #fff;*/
+	color: #4e4f51;
+	text-decoration: none;
+	&:link, &:visited {
+		/*color: #fff;*/
+		color: #4e4f51;
+		text-decoration: none;
+	}
+}
+
+/*
+.ui-widget-content a,
+.ui-widget-content a:link,
+.ui-widget-content a:visited {
+	color: #06c;
+	text-decoration: none;
+	cursor: hand;
+	cursor: pointer;
+}
+*/
+/*
+.accordionActions .ui-state-active,
+.accordionActions .ui-state-active,
+.accordionActions .ui-widget-content .ui-state-active,
+.accordionActions .ui-widget-header .ui-state-active {
+	border: 1px solid #8b8e90 !important;
+	background: #8b8e90 url(images/ui-bg_inset-hard_35_8b8e90_1x100.png) 50% 50% repeat-x !important;
+}
+
+.accordion .ui-state-active,
+.accordion .ui-state-active,
+.accordion .ui-widget-content .ui-state-active,
+.accordion .ui-widget-header .ui-state-active {
+	border: 1px solid #3b90ce !important;
+	background: #3b90ce url(images/ui-bg_inset-soft_35_3b90ce_1x100.png) 50% 50% repeat-x !important;
+}
+*/
+
+.accordion {
+	display: none;
+}
+
+.ui-accordion-header {
+	margin: 0 !important;
+	margin-top: -1px !important;
+}
+
+.editElement {
+	display: none;
+}
+
+.accordionActions, .accordionComments {
+	padding: 0 !important;
+	margin-top: 10px;
+	color: #4e4f51;
+}
+
+.userCanAddAction {
+	margin-right: 100px;
+}
+
+.header-edit-container {
+	position: relative;
+	/*height: 1px;*/
+	/* This fixed some weird formatting with the first discussion item in the list */
+}
+
+.header {
+	/*text-transform: uppercase;*/
+}
+
+.header-title {
+	display: inline-block;
+}
+
+.header-title-edit {
+	width: 350px;
+	padding: 4px;
+	position: absolute;
+	top: 5px;
+	left: 40px;
+	z-index: 400;
+	display: none;
+}
+
+.header-status {
+	display: inline-block;
+	float: right;
+	margin-right: 50px;
+}
+
+.header-status-edit {
+	position: absolute;
+	width: 120px;
+	top: 5px;
+	right: 65px;
+	z-index: 400;
+	display: none;
+}
+
+.meeting-delete-button {
+	float: left;
+	padding: 7px;
+	display: none;
+}
+
+.discussion-item-edit-button {
+	position: absolute;
+	top: 12px;
+	right: 20px;
+	z-index: 400;
+}
+
+.discussion-item-delete-button {
+	position: absolute;
+	top: 12px;
+	left: 420px;
+	z-index: 400;
+	display: none;
+}
+
+.action-button-add {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.ui-icon {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.action-table-new {
+	margin-bottom: 15px;
+	width: 100%;
+	th {
+		/*border-bottom: 1px dotted #ccc;*/
+	}
+	td {
+		padding: 5px;
+		white-space: nowrap;
+	}
+}
+
+.action-table-td-delete {
+	width: 10px;
+	text-align: center;
+}
+
+.action-table-td-description {
+	/*width: 100%;*/
+}
+
+.action-table-td-assignment {
+	width: 210px;
+	white-space: nowrap;
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			padding: 0 0 0 5px;
+			margin: 0;
+			list-style: none;
+		}
+	}
+}
+
+.action-table-td-assignment-date {
+	width: 120px;
+	white-space: nowrap;
+	.datepicker {
+		margin-top: 4px;
+	}
+}
+
+.action-table-list {
+	width: 100%;
+	background: #edeff4;
+	border-collapse: collapse;
+	td {
+		border-top: 2px solid white;
+		padding: 6px;
+	}
+}
+
+/*
+.action-table-list th {
+	border-bottom: 1px solid black;
+	text-align: left;
+}
+*/
+
+.comment-table {
+	width: 100%;
+	background: #edeff4;
+	border-collapse: collapse;
+	td {
+		padding: 6px;
+		border-top: 2px solid white;
+	}
+}
+
+.comment-table-commentor {
+	font-size: .7em;
+}
+
+.columnHeader {
+	text-align: left;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1em;
+	padding: 5px;
+	white-space: nowrap;
+}
+
+.datepicker, .timepicker {
+	width: 90px;
+}
+
+textarea {
+	width: 99%;
+	height: 40px;
+}
+
+.emailOptions {
+	width: 560px;
+	table-layout: fixed;
+	overflow: auto;
+	margin-bottom: 20px;
+	.oddRow, .evenRow {
+		padding: 5px;
+	}
+}
+
+.emailGroupSubcategory {
+	background-color: #D2DF9A;
+	color: #4E4F51;
+	text-align: left;
+	margin-bottom: 10px;
+	border: 1px solid red;
+}
+
+/* PRINT STYLE */
+
+.printStyle {
+	font-size: 13px;
+}
+
+.pageHeader {
+	font-size: 16px !important;
+	color: black;
+}
+
+.meetingInfo {
+	th, td {
+		/*background: red;*/
+		padding-left: 0;
+		margin-left: 0;
+	}
+}
+
+.discussionHeader {
+	border: 1px solid #3b90ce;
+	/*background: #3b90ce url(images/ui-bg_inset-soft_35_3b90ce_1x100.png) 50% 50% repeat-x;*/
+	background: #D2DF9A;
+	font-weight: bold;
+	/*color: #fff;*/
+	color: #4e4f51;
+	margin-top: 10px;
+	padding: 2px;
+}
+
+.discussionSection div {
+	padding: 5px;
+}
+
+.headerActions, .headerComments {
+	border: 1px solid #8b8e90;
+	background: #8b8e90 url(images/ui-bg_inset-hard_35_8b8e90_1x100.png) 50% 50% repeat-x;
+	font-weight: normal;
+	color: #fff;
+}
+
+.headerActions a, .headerComments a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/*
+.action-table-td-description.printView {
+	width: 320px;
+	background: green;
+	white-space: nowrap;
+}
+*/
+
+.action-table-td-assignment.printView {
+	width: 120px;
+	white-space: nowrap;
+	ul li {
+		display: block;
+		padding: 1px !important;
+		margin: 1px !important;
+	}
+}
+
+.printStyle {
+	#header, #footer {
+		position: fixed;
+		left: 0;
+		right: 0;
+		color: #aaa;
+		font-size: 0.9em;
+	}
+	#header {
+		top: -25px;
+		border-bottom: 0.1pt solid #aaa;
+	}
+	#footer {
+		bottom: -5px;
+		border-top: 0.1pt solid #aaa;
+	}
+	#header table, #footer table {
+		width: 100%;
+		border-collapse: collapse;
+		border: none;
+	}
+	#header td, #footer td {
+		padding: 0;
+		width: 50%;
+	}
+}
+
+.page-number {
+	text-align: right;
+	&:before {
+		content: "Page " counter(page);
+	}
+}
+
+/*
+hr {
+	page-break-after: always;
+	border: 0;
+}
+*/
+
+#divMeetingDetails {
+	width: 1000px;
+}
+
+#discussionList {
+	width: 1000px;
+	margin: 10px 0px;
+}
+
+#discussionListContainer {
+	padding: 10px 0px;
+}
+
+#formNewDiscussionItem {
+	width: 1000px;
+}

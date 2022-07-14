@@ -1,0 +1,293 @@
+#table-cellborder .celborderleftright {
+    /*border-left:1px solid #cbc8c8;
+    border-right:1px solid #cbc8c8;*/
+}
+
+table tr th,table tr td{
+    font-family : Calibri;
+}
+#record_list_container--manage-submittal-record {
+    border:1px solid #cbc8c8;
+    border-collapse: collapse;
+}
+#record_list_container--manage-submittal-record thead tr:last-child td {
+    border-bottom:1px solid #cbc8c8;
+}
+#record_list_container--manage-request_for_information-record {
+    border:1px solid #cbc8c8;
+    border-collapse: collapse;
+}
+#record_list_container--manage-request_for_information-record thead tr:last-child td {
+    border-bottom:1px solid #cbc8c8;
+}
+#MeetingTableWithDiscussion {
+    border:1px solid #cbc8c8;
+    border-collapse: collapse;
+}
+#MeetingTableWithDiscussion tr td {
+    border:1px solid #cbc8c8;
+}
+#MeetingTableWithDiscussion #border-0 {
+    border-bottom: none !important;
+}
+L_
+#table-inside-bordernone td {
+    border:none !important;
+}
+
+.marginleftMet{
+    margin-left:60px;
+}
+.marginleft40{
+    margin-left:40px;
+}
+.marginleft20{
+    margin-left:20px;
+}
+.detailed_week tr th{
+    text-transform:uppercase;
+}
+body{
+    /*font-size : 15pts;*/
+    font-family : Calibri;
+}
+.headerSize18{
+    /*font-size:16pts;*/
+    text-transform : uppercase;
+}
+/*meeting report css*/
+/*.ActionItemAssigneesTable tr td{
+border:0 !important;
+}*/
+.marginDiscussionitem{
+    margin:10px;
+}
+/*.borderDownNot{
+    border-bottom: none !important;
+}*/
+.textUdCal{
+/*text-decoration:underline;*/
+/*border-bottom:1px solid #CBC8C8;*/
+color:#000;
+}
+.textUd{
+text-decoration:underline;
+color:#000;
+}
+#record_list_container--manage-request_for_information-record,
+#record_list_container--manage-submittal-record,
+#MeetingTableWithDiscussion  {
+   /*border-bottom:1px solid #CBC8C8 !important;*/
+}
+.tableHeaderInnerMeeting{
+        color:#3487c7;
+        font-weight:semi-bold;
+}
+.paragraphMargin{
+    margin:0;
+    font-weight:normal;
+}
+.paragraphBoldCal{
+    font-family: 'Calibri-bold';
+}
+.paragraphBold{
+    font-weight:bold;
+}
+.CellBorderTop{
+        /*border-top:1px solid #CBC8C8;*/
+}
+#MeetingTableWithDiscussion tr .TDBorderTop{
+    /*border-top:1px solid #CBC8C8;
+    border-bottom:1px solid #CBC8C8;*/
+}
+#MeetingTableWithDiscussion tr .TDBorder{
+    /*border-bottom:1px solid #CBC8C8;*/
+}
+#MeetingTableWithDiscussion tr .cellBorder, #MeetingTableWithDiscussion tr th{
+    /*border-right:1px solid #CBC8C8;
+    border-bottom:1px solid #CBC8C8;*/
+}
+#MeetingTableWithDiscussion tr .tdBold {
+    font-weight : bold;
+}
+.MeetingTableWithInfo tr td, .MeetingTableWithInfo tr th{
+    /*border-right:1px solid #CBC8C8;*/
+}
+
+.fontSize16{
+    /*font-size:16pts;*/
+    font-size:16px;
+    /*text-decoration:underline;*/
+    font-family: 'Calibri-bold';
+    text-transform:uppercase;
+    border-bottom:1px solid #CBC8C8;
+}
+.fontSize14{
+    /*font-size:16pts;*/
+    font-size:14px;
+    /*text-decoration:underline;*/
+    font-family: 'Calibri-bold';
+    text-transform:uppercase;
+    border-bottom:1px solid #CBC8C8;
+}
+.fontSize12{
+    font-size:12px;
+}
+.cellRTNotWback
+{
+    border-top:none !important;
+    background: #fff;
+}
+.comment-table tr .BotBord {
+  /*border-bottom: 1px solid #CBC8C8;*/
+}
+.comment-table tr{
+vertical-align:top;
+}
+.project_nameCal{
+    text-align:center;
+    /*font-size:18pts;*/
+    font-size:18px;
+    font-family:'Calibri-bold';
+    text-transform : uppercase;
+    /*border-bottom: 1px solid #cbc8c8;*/
+}
+/*Bid list css*/
+.oddRow, .oddRowNotClickable {
+    background-color: #efefef;
+}
+#record_list_container--manage-request_for_information-record td,
+#record_list_container--manage-submittal-record td,
+#MeetingTableWithDiscussion td {
+   border-color: #cbc8c8;
+}
+#record_list_container--manage-request_for_information-record thead,
+#record_list_container--manage-submittal-record thead,
+#MeetingTableWithDiscussion thead {
+   /*border-right: 1px solid #cbc8c8 !important;*/
+}
+.borederRowBid td{
+    /*border-bottom: 1px solid #cbc8c8;
+    border-top: 1px solid #cbc8c8;*/
+}
+/*Manpower css*/
+#manpower_activity_monthly tr td,#manpower_activity tr td,#manpower_activity tr th{
+/*border:1px solid #CBC8C8;*/
+}
+#manpower_activity_monthly{
+font-size:7px;
+}
+/*Manpower css end*/
+#RFiReportQA .marginTopborder{
+/*border-top:1px solid #CBC8C8;
+border-bottom:1px solid #CBC8C8;*/
+}
+#PurchaseingLog,#ForecastLog{
+width:100%;
+}
+.backwhite{
+    background-color: whitesmoke;
+}
+.bold{
+font-weight:bold;
+}
+.align-center{
+    text-align:center;
+}
+.borderBottom {
+    /*border-bottom: 1px solid #CBC8C8;*/
+}
+.altColors tr:nth-child(2n+1) {
+    background-color: #fff;
+}
+.altColors tr:nth-child(2n) {
+    background-color: whitesmoke;
+}
+.altColors tr td:first-child {
+    /*border-left: 1px solid #cbc8c8;*/
+}
+.altColors tr td:last-child {
+    /*border-right: 1px solid #cbc8c8;*/
+}
+.detailed_week,.tableborder{
+    margin-bottom:2%;
+    /*border:1px;*/
+}
+.even{
+    background-color:#f5f5f5;
+}
+.odd{
+    /*background-color:#E4E2E0;*/
+}
+td p, .con_jus,.text-justify{
+    text-align:justify;
+    text-wordwrap:wordbreak;
+}
+.align-left,.textAlignLeft{
+    text-align:left;
+}
+.align-right{
+    text-align:right;
+}
+.table-header{
+    margin:0;
+    padding:0;
+}
+.report-name{
+    font-size:14px;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.line-break{
+    /*border:0.5px solid;*/
+}
+.repot-inform{
+background-color:#2481c3;
+color:#fff;
+padding:5px;
+margin-bottom:5px;
+}
+.table-headerinner{
+    background-color:#2481c3;
+    color:#fff;
+    font-weight:lighter;
+}
+#report_html{
+    /*border:1px solid;*/
+    font-size:18px;
+}
+.total_bold{
+    font-weight:bold;
+}
+.center-align,.textAlignCenter{
+    text-align:center;
+}
+.table_header_td{
+    font-size:12px !important;
+    color:#000;
+}
+.marginTopborderMT
+{
+    /*border-top: 1px solid #cbc8c8;*/
+}
+.marginrightborderMT
+{
+    /*border-right: 1px solid #cbc8c8;*/
+}
+@page { margin: 30px 50px 80px 50px; }
+ /*.header{position: fixed; top:-100px;}*/
+#footer { position: fixed; left: 0px; bottom: -25px; right: 0px; height: 30px; }
+.footer { position: fixed;  bottom: -60px; right: 80px; height: 30px;font-size:10px;left:130px;color: #aaa;
+}
+.cellRTNot
+{
+    /*border-right:1px solid #CBC8C8;
+    border-top:1px solid #CBC8C8;
+    border-bottom:1px solid #CBC8C8;*/
+}
+.textUpper{
+    text-transform : uppercase;
+}
+.nowrapspace{
+    word-wrap:nowrap;white-space:nowrap;
+}

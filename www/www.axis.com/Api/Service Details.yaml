@@ -1,0 +1,144 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+servers:
+# Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/ganesh98a/MyFulcrum/1.0.0
+  - url: http://optisol.myfulcrum.com
+    description: Myfulcrum Dev
+  - url: https://staging2.myfulcrum.com
+    description: Staging Server
+  - url: https://www.myfulcrum.com
+    description: Production Server
+info:
+  title: MyFulcrum
+  description: 'Bringing purpose to writing'
+  version: "1.0.0"
+tags:
+  - name: Auth
+    description: Users Authentication
+paths:
+  /Api/RN_Login.php:
+    post:
+      tags:
+        - Users
+      summary: Authendicate Users with credentials
+      operationId: authUsers
+      description: |
+        By passing in the username & password, to validate the user is valid in the system
+      parameters:
+        - name: Content-Type
+          in: header
+          description: ''
+          required: true
+          schema:
+            type: string
+            example: application/json
+          example: application/json
+      requestBody:
+        description: ''
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AuthRequestBody'
+        required: true 
+      responses:
+        '202':
+          description: user authendicated successfully
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Auth'
+        '400':
+          description: bad input parameter
+        '500':
+          description: internal server error
+components:
+  schemas:
+    AuthRequestBody:
+      type: object
+      required:
+        - username
+        - password
+      properties:
+        username:
+          type: string
+        password:
+          type: string
+    Auth:
+      type: object
+      required:
+        - status
+        - access_token
+        - message
+        - err_message
+        - data
+      properties:
+        status:
+          type: integer
+          example: 202
+        access_token:
+          type: string
+          example: 'e3690299bdc8d51546ac62956b69f2f41'
+        message:
+          type: string
+          example: 'Login Successfully'
+        err_message:
+          type: string
+          example: 'Invalid credential'
+        data:
+          $ref: '#/components/schemas/AuthData'
+    AuthData:
+      required:
+        - user_company_id
+        - user_company_name
+        - user_id
+        - role_id
+        - actual_role
+        - primary_contact_id
+        - default_project_id
+        - active_contact_id
+        - mobile_phone_number
+        - email
+        - password_hash
+        - password_guid
+        - currentlySelectedProjectUserCompanyId
+        - currentlySelectedProjectId
+        - currentlySelectedProjectName
+        - currentlyActiveContactId
+        - currentlyActiveTemplateTheme
+      properties:
+        user_company_id:
+          type: string
+        user_company_name:
+          type: string
+        user_id:
+          type: string
+        role_id:
+          type: string
+        actual_role:
+          type: string
+        primary_contact_id:
+          type: string
+        default_project_id:
+          type: string
+        active_contact_id:
+          type: string
+        email:
+          type: string
+        currentlySelectedProjectUserCompanyId:
+          type: string
+        currentlySelectedProjectId:
+          type: string
+        currentlySelectedProjectName:
+          type: string 
+        currentlyActiveContactId:
+          type: string
+        currentlyActiveTemplateTheme:
+          type: string
+        mobile_phone_number:
+          type: string
+        change_password_flag:
+          type: string
+      type: object

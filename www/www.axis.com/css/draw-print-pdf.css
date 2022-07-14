@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+[STYLE GUIDE]
+
+ORANGE HUE:	#B28B51
+BLUE GRAY:	#A8B4BE
+			#9FAFB7
+			#435B69
+BLUE TEAL:	#56758B
+GRAY:		#767777
+			#5A5D60
+
+
+[STYLE GUIDE - Green Theme]
+
+Dark Grey:			#4E4F51
+Medium Grey:		#838589
+Light Grey:			#B2B2B2
+Dark Lime Green:	#3b90ce
+Light Lime Green:	#D2DF9A
+
+*******************************************************************************/
+body {
+	background-color: #fff;
+	color: #000;
+	/*font-family: Arial, Helvetica, Verdana, sans-serif;*/
+	font-family: "Times New Roman", Times, serif;
+	font-style: normal;
+	text-decoration: none;
+	margin:0px;
+	/*
+	margin: 0;
+	padding: 0;
+	*/
+}
+#templateBody{
+	background-color: #fff;
+	color: #000;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-style: normal;
+	text-decoration: none;
+	margin:0px;
+}
+/* text property */
+.textAlignCenter {
+	text-align: center;
+}
+.textAlignRight {
+	text-align: right;
+}
+.textAlignLeft {
+	text-align: left;
+}
+.textAlignBottom {
+	text-align: bottom;
+}
+.tableAlignCenter {
+	margin: 0 auto;
+}
+.tableAlignCenterMargin {
+	margin: 30px auto;	
+}
+.textBold {
+	font-weight: bold;
+}
+.textNormal {
+	font-weight: normal !important;
+}
+.textColorBlue {
+	color: #3b90ce;
+}
+.textColorWhite {
+	color: #fff;
+}
+.textAlignJustify {
+	text-align: justify;
+}
+.textIndent10 {
+	text-indent: 30px;
+}
+/* width percentage */
+.width10per {
+	width: 10%;
+}
+.width12per {
+	width: 12%;
+}
+.width20per {
+	width: 20%;
+}
+.width22per {
+	width: 22%;	
+}
+.width25per {
+	width: 25%;
+}
+.width30per {
+	width: 30%;
+}
+.width35per {
+	width: 35%;
+}
+.width40per {
+	width: 39%;	
+}
+.width43per {
+	width: 43%;	
+}
+.width45per {
+	width: 45%;	
+}
+.width50per {
+	width: 50%;	
+}
+.width55per {
+	width: 55%;	
+}
+.width57per {
+	width: 57%;	
+}
+.width60per {
+	width: 59%;
+}
+.width80per {
+	width: 80%;
+}
+.width88per {
+	width: 88%;
+}
+.width70per{
+	width: 70%;
+}
+.width75per{
+	width: 75%;
+}
+.width90per {
+	width: 90%;
+}
+.width95per {
+	width: 95%;
+}
+.width100per {
+	width: 100%;
+}
+/* font size*/
+.fontSize10 {
+	font-size: 9px !important;
+}
+.fontSize11 {
+	font-size: 10px !important;
+}
+.fontSize12 {
+	font-size: 11px !important;
+}
+.fontSize13 {
+	font-size: 12px !important;
+}
+.fontSize14 {
+	font-size: 13px !important;
+}
+.fontSize15 {
+	font-size: 14px !important;
+}
+.fontSize16 {
+	font-size: 15px !important;
+}
+/* margin & padding */
+.nomargin {
+	margin: 0;
+}
+.marginTopNo {
+	margin-top: 0;
+}
+.paddingRight10 {
+	padding-right: 10px;
+}
+.paddingLeft5 {
+	padding-left: 5px;
+}
+.marBottom0 {
+	margin-bottom: 0px;
+}
+.bottom0 {
+	margin-bottom: 5px;
+}
+.liMargin5_0  li{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.liMargin10_0  li{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.marginTop50 {
+	margin-top: 50px;
+}
+.paddingLeft0 {
+	padding-left: 0;
+}
+/* genearal */
+.headerSectionTable {
+	width: 100%;
+}
+.headerSectionTableTh td{
+	font-weight: bold;
+}
+.mainFlex {
+	display: flex;
+}
+.flexOne {
+	flex: 1;
+	padding-right: 10px;
+}
+.flexTwo {
+	flex: 1.5;
+	padding-left: 10px;
+}
+.appContractPayment, .appChangeOrderTable, .appContractorTable, .appArchitectTable, .certifiedAmountTable, .appNotaryBlockTable, .drawTable, .mainContractTable {
+	border-collapse: collapse;
+	width: 100%;
+}
+.appContractPayment td, .appChangeOrderTable td, .certifiedAmountTable, .appNotaryBlockTable, .drawTable{
+	font-size: 11px;
+	vertical-align: top;
+}
+.appChangeOrderTable tr td,.appChangeOrderTable tr th{
+	border: 1px solid #adadad;
+}
+.headerSectionTable tr td{
+	vertical-align: top;
+	width: 22%;
+}
+.tdBottomBorder {
+	border-bottom: 1px solid #000;
+}
+.tdBottomBorder1 {
+	border-bottom: 1px solid #000;	
+}
+.paragraph {
+	justify-content: center;
+	/*line-height: 23px;*/
+	font-size: 11px;
+	padding: 0px 5px 0px 5px;
+}
+.paragraphTemp {
+	justify-content: center;
+	line-height: 23px;
+	font-size: 11px;
+	padding: 0px 5px 0px 5px;
+}
+.floatLeft {
+	float: left;
+}
+.appContractPaymentBotVal {
+	vertical-align: bottom !important;
+}
+.mainContractTable tr td {
+	vertical-align: top;	
+}
+.drawTableContent {
+	page-break-before: always;
+}
+.backgroundColor {
+	background: #3b90ce;
+}
+.headerBackground {
+	background: #3b90ce;
+	margin: 0;
+	padding: 7px;
+	color: #fff;
+}
+.notesTable {
+	border-collapse: collapse;
+	border: 1px solid #000;
+}
+.listStyleNone {
+	list-style: none;
+}
+.floatRight {
+	float: right;
+}
+.table-break th,
+.table-break td {
+   word-break: break-all;
+	 text-align: left;
+}
+.width100px{
+	width:100px;
+}
+.width175px{
+	width:175px;
+}
+.width75px{
+	width:75px;
+}
+.marginLeft5{
+	margin-left:5px;
+}
+.marginRight5{
+	margin-right:5px;
+}
+.lineHeight15{
+	line-height:15px;
+}
+.p-t-20{
+	padding-top: 20px;
+}
+.p-t-30{
+	padding-top: 30px;
+}
+.p-l-30{
+	padding-left: 30px;
+}
+.p-t-50{
+	padding-top: 50px;
+}
+.drawpdftoplogo{
+	height: 50px;
+}
+.print_draw_proof{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+#drawTemp1 tr td,#drawTemp1 tr th{
+	border: 1px solid #adadad;
+	font-size: 11px;
+}
+#drawTemp2 tr td,#drawTemp2 tr th{
+	border: 1px solid #adadad;
+	font-size: 11px;
+}

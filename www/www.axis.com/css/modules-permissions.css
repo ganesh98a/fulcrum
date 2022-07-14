@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+.permissionTable {
+	/*width: 700px;*/
+	margin-bottom: 30px;
+}
+
+.permissionTableMainHeader {
+	/* Non-css3 browsers */
+	background: #95b42e;
+	/* IE */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#95b42e', endColorstr='#afd137') !important;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#95b42e), to(#afd137));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #95b42e, #afd137);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #95b42e, #afd137);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #95b42e, #afd137);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #95b42e, #afd137);
+	background: #3b90ce;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+.permissionTable1 th {
+	vertical-align: middle;
+}
+
+.permissionFirstCell {
+	/* width: 230px !important; */
+}
+
+.permissionContactRoleCell {
+	width: 230px !important;
+	padding-left: 30px;
+}
+
+.permissionContactRoleRow td {
+	background-color: #f2f2f2;
+}
+
+.permissionFunctionCell {
+	max-width: 100px;
+	text-align: center;
+}
+
+#thRoles {
+	text-align: center;
+	width: 225px;
+}
+
+.filterDescription {
+	font-size: 85%;
+	font-weight: normal;
+	position: absolute;
+	top: 85%;
+}
+
+.table-team-members {
+	/* border: 1px solid black; */
+	width: 100%;
+}
+.table-team-members td {
+	border: 1px solid black;
+	padding: 5px;
+}
+.table-team-members th {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: left;
+}
+
+.table-contact-roles td, .table-contact-roles th {
+	padding: 1px;
+	border: none;
+}
+
+label[for=checkboxFilterRoles] {
+	float: none;
+	text-align: left;
+	margin-right: 0;
+	padding-top: 0;
+	min-width: 0;
+	font-size: inherit;
+}
+
+.divTabs {
+	height: 38px;
+}
+
+.divTabs ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.divTabs ul li a {
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 2px rgba(25, 104, 164, 0.78);
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 45px;
+	color: #FFF;
+	float: left;
+	width: 185px;
+	height: 38px;
+	background: url(/images/buttons/button-dcr-normal.jpg) no-repeat;
+	cursor: pointer;
+	background-size: cover;
+}
+
+.divTabs ul li a:hover {
+	background: url(/images/buttons/button-dcr-selected.jpg) no-repeat;
+	background-size: cover;
+}
+
+.divTabs .activeTabGreen {
+	background: url(/images/buttons/button-dcr-selected.jpg) no-repeat;
+	background-size: cover;
+}

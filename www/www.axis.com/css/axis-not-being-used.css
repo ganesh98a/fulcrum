@@ -1,0 +1,433 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+
+/* Fonts */
+
+@font-face {
+font-family: RoboRegu;
+src: url(/fonts/roboto/Roboto-Regular.ttf),
+}
+
+@font-face {
+font-family: RoboBold;
+src: url(/fonts/roboto/Roboto-Bold.ttf),
+}
+
+
+
+html, body, div, span, object, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, address, code, img, email, strong, dl, dt, dd, ol, ul, li, fieldset, form, label {
+	font-family: 'Helvetica Neue', Helvetica, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+* html #mainSection{ 			/*IE6 hack*/
+	height: 100%;
+	width: 100%;
+}
+
+html, body{
+	height: 100%;
+}
+
+body{
+	overflow: hidden;
+	max-height: 100%;
+}
+
+* html body{ 					/*IE6 hack*/
+padding: 0 0 0 244px; 			/*Set value to (0 0 0 WidthOfFrameDiv)*/
+}
+
+table {
+	border-spacing:0;
+	border-collapse:collapse;
+}
+
+table td, table th{
+	padding: 2px 5px 2px 0;
+}
+
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+
+
+#wrap {	min-height: 100%; }
+
+#sideBar {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 240px;				/*WidthOfFrameDiv*/
+	height: 100%;
+	overflow: auto;			/*Disable scrollbars. Set to "scroll" to enable*/
+	background: #f7f7f7;
+	border: 2px solid #eaeaea;
+	padding-top: 20px;
+}
+
+#mainSection {
+	position: fixed;
+	top: 0;
+	left: 244px; 				/*Set left value to WidthOfFrameDiv*/
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+	background: white;
+	padding-bottom: 50px;		/* must be same height as the footer */
+}
+
+
+#nav {
+	margin-top: 16px;
+	text-transform: uppercase;
+}
+
+#nav ul li {
+	margin: 0 0 -2px 0;
+}
+
+#nav ul li a, .menuheader {
+	display: block;
+	width: 206px;
+	height: 29px;
+	border: 2px solid #eaeaea;`
+	background: transparent;
+	padding: 15px 16px 5px;
+	text-decoration: none;
+	color: black;
+	font-size: 1.2em;
+}
+
+#nav ul li a {
+	padding: 15px 40px 5px;
+	background: #bdbec0;
+}
+
+#nav .functionStyle {
+	padding: 15px 70px 5px;
+	background: white;
+
+}
+
+#nav ul li a:hover, .menuheader:hover {
+	display: block;
+	width: 206px;
+	height: 29px;
+	background: url(/images/navbg.png) no-repeat top left white;
+	border: 2px solid #eaeaea;
+	padding: 15px 16px 5px;
+	text-decoration: none;
+	color: black;
+	cursor: hand;
+	cursor: pointer;
+}
+
+#nav ul li a:hover{
+	padding: 15px 40px 5px;
+}
+
+#nav .functionStyle:hover {
+	padding: 15px 70px 5px;
+}
+
+#nav ul li a.active, .menuheader:active {
+	display: block;
+	width: 206px;
+	height: 29px;
+	background: url(/images/navbg.png) no-repeat top left white;
+	border: 2px solid #eaeaea;
+	border-right-color: white;
+	padding: 15px 16px 5px;
+	text-decoration: none;
+	color: black;
+}
+
+#nav ul li a img {
+	float: right;
+}
+
+#navBoxModuleGroup {
+	margin-top: 50px;
+}
+
+.selectedItem {
+	background: #e5efcf !important; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8e6b5', endColorstr='#ffffff') !important; /* for IE */
+	background: -webkit-gradient(linear, left bottom, left top, from(#d8e6b5), to(#ffffff)) !important; /* for webkit browsers */
+	background: -moz-linear-gradient(bottom,	#d8e6b5,	#ffffff) !important; /* for firefox 3.6+ */
+}
+
+.activeCategory, .openheader, .openheader2 {
+	background: #a3c74d !important;
+	color: white;
+}
+
+.activeCategory:hover, .openheader:hover, .openheader2:hover {
+	color: white;
+}
+
+
+#footer {
+	position: relative;
+	margin-top: -50px; 			/* negative value of footer height */
+	height: 50px;
+	clear:both;
+	background: #909294;
+}
+
+input {
+	font-size: 1em;
+}
+select{}
+input[type=button], input[type=submit], input[type=reset], input[type=file] {
+	background: #e5efcf !important; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8e6b5', endColorstr='#ffffff') !important; /* for IE */
+	background: -webkit-gradient(linear, left bottom, left top, from(#d8e6b5), to(#ffffff)) !important; /* for webkit browsers */
+	background: -moz-linear-gradient(bottom,	#d8e6b5,	#ffffff) !important; /* for firefox 3.6+ */
+	border: 1px solid #b8d47a;
+	padding: 4px;
+	cursor: hand;
+	cursor: pointer;
+}
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=file]:hover {
+	background: #e5efcf !important; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#d8e6b5') !important; /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#d8e6b5), to(#ffffff)) !important; /* for webkit browsers */
+	background: -moz-linear-gradient(top,	#d8e6b5,	#ffffff) !important; /* for firefox 3.6+ */
+	/*color: #909294;*/
+}
+
+.hrClass {
+	height: 1px;
+}
+
+
+#impersonate {
+	float: left;
+	/*
+	position: relative;
+	top: 0;
+	left: 244px; */				/*Set left value to WidthOfFrameDiv*/
+	padding: 15px;
+}
+
+.innertube {
+margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+}
+
+#masterHeader {
+	border-bottom: 1px solid #eaeaea;
+	height: 75px;
+}
+
+#masterHeaderBox1 {
+	float: left;
+	margin: 25px 0 0 15px;
+	font-family: RoboRegu;
+	font-size: 1.5em;
+	color: #909294;
+	text-transform:uppercase;
+	letter-spacing:3px;
+}
+
+#logoGrey {
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 75px;
+}
+
+.masterHeaderLinks {
+	float: right;
+	text-align: right;
+}
+
+/*
+.masterHeaderLinks a {
+	float: left;
+	padding: 28px 22px 27px 22px;
+	text-decoration: none;
+	color: #767676;
+	border: 1px solid #eaeaea;
+	display: block;
+	margin: 0 0 0 -1px;
+}
+
+.masterHeaderLinks a:hover {
+	padding: 28px 22px 27px 22px;
+	text-decoration: none;
+	color: white;
+	border: 1px solid #eaeaea;
+	display: block;
+	margin: 0 0 0 -1px;
+	background: #adc657;
+}
+*/
+
+.masterHeaderLinks a {
+	float: left;
+	padding: 15px 22px 15px 22px;
+	text-decoration: none;
+	color: white;
+	border: 1px solid #eaeaea;
+	display: block;
+	margin: 0 0 0 -1px;
+}
+
+.masterHeaderLinks a:hover {
+	padding: 15px 22px 15px 22px;
+	text-decoration: none;
+	color: white;
+	border: 1px solid #eaeaea;
+	display: block;
+	margin: 0 0 0 -1px;
+	background: #adc657;
+	cursor: hand;
+	cursor: pointer;
+}
+
+
+#divAjaxLoading {
+/*
+	position: fixed;
+	top: 10px;
+	right: 10px;
+*/
+	display: none;
+}
+
+#divAjaxLoading img {
+	display: none;
+}
+
+.nowrap, .nowrapCells td, .nowrapCells th {
+	white-space: nowrap;
+}
+
+.useRemainingSpace {
+	width: 99%;
+}
+
+.marginRight {
+	margin-right: 15px;
+}
+
+.columnHeader {
+	text-align: left;
+	text-decoration: underline;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.1em;
+	padding: 5px 0 10px 0;
+}
+
+
+/******** Message Styling *************/
+#messageWrapper{
+	position: fixed;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	z-index: 1200;
+}
+
+.infoMessage, .successMessage, .warningMessage, .errorMessage, .validationMessage {
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	border: 1px solid;
+	padding:15px 50px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	z-index: 1300;
+}
+.infoMessage, .infoMessageLabel {
+	color: #00529B;
+	background-color: #BDE5F8;
+}
+.infoMessage {
+	background-image: url(/images/buttons/button-info.png);
+}
+.successMessage, .successMessageLabel {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+}
+.successMessage {
+	background-image:url(/images/buttons/button-checkmark-green.png);
+}
+.warningMessage, .warningMessageLabel {
+	color: #9F6000;
+	background-color: #FEEFB3;
+}
+.warningMessage {
+	background-image: url(/images/buttons/button-exclamation-point-green.png);
+}
+.errorMessage, .errorMessageLabel {
+	color: #D8000C;
+	background-color: #FFBABA;
+}
+.errorMessage {
+	background-image: url(/images/buttons/button-cancel.png);
+}
+
+
+/******* Modal Popup Window Styling ****************/
+.dumbBoxWrap { /* The div that shows/hides. */
+	position: absolute;
+	top: 0;
+	left: 0;
+		display:none; /* starts out hidden */
+		z-index:700; /* High z-index to ensure it appears above all content */
+}
+.dumbBoxOverlay { /* Shades out background when selector is active */
+		position:fixed;
+		width:100%;
+		height:100%;
+		background-color:black;
+		opacity:.5; /* Sets opacity so it's partly transparent */
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE transparency */
+		filter:alpha(opacity=50); /* More IE transparency */
+		z-index:700;
+}
+.vertical-offset { /* Fixed position to provide the vertical offset */
+		position:fixed;
+		top:10%;
+		width:100%;
+		z-index:800; /* ensures box appears above overlay */
+}
+.dumbBox { /* The actual box, centered in the fixed-position div */
+		width:405px; /* Whatever width you want the box to be */
+		position:relative;
+		margin:0 auto;
+		/* Everything below is just visual styling */
+		background-color:white;
+		padding:10px;
+		border:1px solid black;
+	overflow: auto;
+}

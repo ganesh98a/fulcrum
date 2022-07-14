@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+
+body {
+	background-color: #fff;
+	color: #000;
+	font-family: Arial, Helvetica, Verdana, sans-serif;
+	font-style: normal;
+	text-decoration: none;
+
+	/*
+	margin: 0;
+	padding: 0;
+	*/
+}
+
+.BIV_header {
+	background:#cee4f1;
+}
+
+.BIV_header p {
+	margin:0px; padding:12px;
+	color:#000;
+	font-size:16px;
+	font-weight:bold;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+	background: rgb(32,169,223); /* Old browsers */
+
+	background: -moz-linear-gradient(top,  rgba(32,169,223,1) 0%, rgba(4,114,178,1) 100%); /* FF3.6+ */
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(32,169,223,1)), color-stop(100%,rgba(4,114,178,1))); /* Chrome,Safari4+ */
+
+	background: -webkit-linear-gradient(top,  rgba(32,169,223,1) 0%,rgba(4,114,178,1) 100%); /* Chrome10+,Safari5.1+ */
+
+	background: -o-linear-gradient(top,  rgba(32,169,223,1) 0%,rgba(4,114,178,1) 100%); /* Opera 11.10+ */
+
+	background: -ms-linear-gradient(top,  rgba(32,169,223,1) 0%,rgba(4,114,178,1) 100%); /* IE10+ */
+
+	background: linear-gradient(to bottom,  rgba(32,169,223,1) 0%,rgba(4,114,178,1) 100%); /* W3C */
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#20a9df', endColorstr='#0472b2',GradientType=0 ); /* IE6-9 */
+
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px; /* future proofing */
+	-khtml-border-radius: 5px;
+
+	color: white;
+	cursor: hand;
+	cursor: pointer;
+	border: 1px solid #2985b4;
+	padding: 5px 10px;
+	margin:10px 0px;
+}
+
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover, input[type=file]:hover {
+
+	background: rgb(4,114,178); /* Old browsers */
+
+	background: -moz-linear-gradient(top,  rgba(4,114,178,1) 0%, rgba(32,169,223,1) 100%); /* FF3.6+ */
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(4,114,178,1)), color-stop(100%,rgba(32,169,223,1))); /* Chrome,Safari4+ */
+
+	background: -webkit-linear-gradient(top,  rgba(4,114,178,1) 0%,rgba(32,169,223,1) 100%); /* Chrome10+,Safari5.1+ */
+
+	background: -o-linear-gradient(top,  rgba(4,114,178,1) 0%,rgba(32,169,223,1) 100%); /* Opera 11.10+ */
+
+	background: -ms-linear-gradient(top,  rgba(4,114,178,1) 0%,rgba(32,169,223,1) 100%); /* IE10+ */
+
+	background: linear-gradient(to bottom,  rgba(4,114,178,1) 0%,rgba(32,169,223,1) 100%); /* W3C */
+
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0472b2', endColorstr='#20a9df',GradientType=0 ); /* IE6-9 */
+
+}
+
+.biddingSubcontractors {
+	background: #cee4f1;
+	color:#000;
+	font-size:16px;
+	font-weight:bold;
+	text-align:center;
+	padding:8px;
+	text-transform:uppercase;
+}
+
+.BIPmain {
+}
+
+.BIPmain .BIP_contentdark {
+}
+
+.BIPmain .BIP_header {
+	height:10px;
+	color:#5c5c5c;
+	padding:10px 10px;
+	font-size:13px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-align:center;
+	background:#daebf5;
+	border-left:1px solid #d0dde4;
+}
+
+table.BIPmain, table.BIPmain th, table.BIPmain td {
+   border: 1px solid #d0dde4;
+}
+
+.BIPmain td {
+	color:#4e4f51;
+	font-size:13px;
+	font-weight:normal;
+	height:32px;
+	vertical-align:middle;
+	padding:3px 10px;
+	background:#eef6fa;
+
+}
+
+.infoNote {
+	background:url(../images/icons/icon-info-red.gif) no-repeat;
+	padding-left:25px;
+	color:#d75c40;
+	font-style:italic;
+}
+
+a[href$='.pdf'] {
+	background:transparent url(../images/icons/icon-file-pdf-gray.gif) center left no-repeat;
+	display:inline-block;
+	padding-left:28px;
+	line-height:18px;
+}
+
+.BIPmain2 {
+	background:#eef6fa;
+}
+
+.BIPmain2 td {
+	color:#4e4f51;
+	font-size:13px;
+	font-weight:normal;
+	padding-top:12px;
+}
+
+.BIPmain2text {
+	width:100%;
+	height:20px;
+	margin-top:-5px;
+}
+
+.BIPmain2textarea {
+	width:100%;
+	height:80px;
+	border:0px;
+}

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<META xmlns="http://www.w3.org/2002/01/P3Pv1">
+	<POLICY-REFERENCES>
+		<EXPIRY max-age="86400" />
+		<POLICY-REF about="#WebsitePolicy">
+			<INCLUDE>/*</INCLUDE>
+		</POLICY-REF>
+	</POLICY-REFERENCES>
+	<POLICIES xmlns="http://www.w3.org/2002/01/P3Pv1">
+		<POLICY name="WebsitePolicy" discuri="http://www.axisitonline.com/w3c/policy.html" opturi="http://www.axisitonline.com/contact-us.php">
+			<ENTITY>
+				<DATA-GROUP>
+					<DATA ref="#business.name">Axis</DATA>
+					<DATA ref="#business.contact-info.online.email">p3p@axisitonline.com</DATA>
+					<DATA ref="#business.contact-info.online.uri">www.axisitonline.com</DATA>
+					<DATA ref="#business.contact-info.telecom.telephone.number">(949) 582-2044</DATA>
+					<DATA ref="#business.contact-info.postal.street">33302 Valle Road, Suite 126</DATA>
+					<DATA ref="#business.contact-info.postal.city">San Juan Capistrano</DATA>
+					<DATA ref="#business.contact-info.postal.stateprov">California</DATA>
+					<DATA ref="#business.contact-info.postal.postalcode">92675</DATA>
+				</DATA-GROUP>
+			</ENTITY>
+			<ACCESS>
+				<contact-and-other/>
+			</ACCESS>
+			<DISPUTES-GROUP>
+				<DISPUTES resolution-type="service" service="http://www.axisitonline.com/contact-us.php" short-description="Disputes">
+					<LONG-DESCRIPTION></LONG-DESCRIPTION>
+					<REMEDIES><correct/></REMEDIES>
+				</DISPUTES>
+			</DISPUTES-GROUP>
+			<STATEMENT>
+				<CONSEQUENCE>Project management software.</CONSEQUENCE>
+				<PURPOSE>
+					<current required="always"/>
+					<admin required="always"/>
+					<develop required="always"/>
+					<tailoring required="always"/>
+					<pseudo-analysis required="always"/>
+					<pseudo-decision required="always"/>
+					<individual-analysis required="always"/>
+					<individual-decision required="always"/>
+					<contact required="always"/>
+					<historical required="always"/>
+					<telemarketing required="always"/>
+					<other-purpose required="always"/>
+				</PURPOSE>
+				<RECIPIENT>
+					<ours>
+						<recipient-description>ours</recipient-description>
+					</ours>
+					<same>
+						<recipient-description>same</recipient-description>
+					</same>
+				</RECIPIENT>
+				<RETENTION>
+					<indefinitely/>
+				</RETENTION>
+				<DATA-GROUP>
+					<DATA ref="#dynamic.clickstream"/>
+					<DATA ref="#dynamic.clickstream.uri"/>
+					<DATA ref="#dynamic.clickstream.uri.authority"/>
+					<DATA ref="#dynamic.clickstream.uri.stem"/>
+					<DATA ref="#dynamic.clickstream.uri.querystring"/>
+					<DATA ref="#dynamic.clickstream.timestamp"/>
+					<DATA ref="#dynamic.clickstream.timestamp.ymd"/>
+					<DATA ref="#dynamic.clickstream.timestamp.ymd.year"/>
+					<DATA ref="#dynamic.clickstream.timestamp.ymd.month"/>
+					<DATA ref="#dynamic.clickstream.timestamp.ymd.day"/>
+					<DATA ref="#dynamic.clickstream.timestamp.hms"/>
+					<DATA ref="#dynamic.clickstream.timestamp.hms.hour"/>
+					<DATA ref="#dynamic.clickstream.timestamp.hms.minute"/>
+					<DATA ref="#dynamic.clickstream.timestamp.hms.second"/>
+					<DATA ref="#dynamic.clickstream.timestamp.fractionsecond"/>
+					<DATA ref="#dynamic.clickstream.timestamp.timezone"/>
+					<DATA ref="#dynamic.clickstream.clientip"/>
+					<DATA ref="#dynamic.clickstream.clientip.hostname"/>
+					<DATA ref="#dynamic.clickstream.clientip.partialhostname"/>
+					<DATA ref="#dynamic.clickstream.clientip.fullip"/>
+					<DATA ref="#dynamic.clickstream.clientip.partialip"/>
+					<DATA ref="#dynamic.clickstream.other"/>
+					<DATA ref="#dynamic.clickstream.other.httpmethod"/>
+					<DATA ref="#dynamic.clickstream.other.bytes"/>
+					<DATA ref="#dynamic.clickstream.other.statuscode"/>
+					<DATA ref="#dynamic.http"/>
+					<DATA ref="#dynamic.http.referer"/>
+					<DATA ref="#dynamic.http.referer.authority"/>
+					<DATA ref="#dynamic.http.referer.stem"/>
+					<DATA ref="#dynamic.http.useragent"/>
+					<DATA ref="#dynamic.clientevents"/>
+					<DATA ref="#dynamic.searchtext"/>
+					<DATA ref="#dynamic.interactionrecord"/>
+					<DATA ref="#user.name"/>
+					<DATA ref="#user.name.given"/>
+					<DATA ref="#user.name.family"/>
+					<DATA ref="#user.login"/>
+					<DATA ref="#user.login.id"/>
+					<DATA ref="#user.login.password"/>
+					<DATA ref="#user.employer"/>
+					<DATA ref="#user.department"/>
+					<DATA ref="#user.business-info"/>
+					<DATA ref="#user.business-info.postal"/>
+					<DATA ref="#user.business-info.postal.name"/>
+					<DATA ref="#user.business-info.postal.name.given"/>
+					<DATA ref="#user.business-info.postal.name.family"/>
+					<DATA ref="#user.business-info.postal.street"/>
+					<DATA ref="#user.business-info.postal.city"/>
+					<DATA ref="#user.business-info.postal.stateprov"/>
+					<DATA ref="#user.business-info.postal.postalcode"/>
+					<DATA ref="#user.business-info.postal.country"/>
+					<DATA ref="#user.business-info.postal.organization"/>
+					<DATA ref="#user.business-info.telecom"/>
+					<DATA ref="#user.business-info.telecom.telephone"/>
+					<DATA ref="#user.business-info.telecom.telephone.loccode"/>
+					<DATA ref="#user.business-info.telecom.telephone.number"/>
+					<DATA ref="#user.business-info.telecom.telephone.ext"/>
+					<DATA ref="#user.business-info.telecom.fax"/>
+					<DATA ref="#user.business-info.telecom.fax.loccode"/>
+					<DATA ref="#user.business-info.telecom.fax.number"/>
+					<DATA ref="#user.business-info.telecom.fax.ext"/>
+					<DATA ref="#user.business-info.telecom.mobile"/>
+					<DATA ref="#user.business-info.telecom.mobile.loccode"/>
+					<DATA ref="#user.business-info.telecom.mobile.number"/>
+					<DATA ref="#user.business-info.telecom.mobile.ext"/>
+					<DATA ref="#user.business-info.telecom.pager"/>
+					<DATA ref="#user.business-info.telecom.pager.loccode"/>
+					<DATA ref="#user.business-info.telecom.pager.number"/>
+					<DATA ref="#user.business-info.telecom.pager.ext"/>
+					<DATA ref="#user.business-info.online"/>
+					<DATA ref="#user.business-info.online.email"/>
+					<DATA ref="#user.business-info.online.uri"/>
+					<DATA ref="#thirdparty.name"/>
+					<DATA ref="#thirdparty.name.given"/>
+					<DATA ref="#thirdparty.name.family"/>
+					<DATA ref="#thirdparty.login"/>
+					<DATA ref="#thirdparty.login.id"/>
+					<DATA ref="#thirdparty.login.password"/>
+					<DATA ref="#thirdparty.jobtitle"/>
+					<DATA ref="#thirdparty.business-info"/>
+					<DATA ref="#thirdparty.business-info.postal"/>
+					<DATA ref="#thirdparty.business-info.postal.name"/>
+					<DATA ref="#thirdparty.business-info.postal.name.given"/>
+					<DATA ref="#thirdparty.business-info.postal.name.family"/>
+					<DATA ref="#thirdparty.business-info.postal.street"/>
+					<DATA ref="#thirdparty.business-info.postal.city"/>
+					<DATA ref="#thirdparty.business-info.postal.stateprov"/>
+					<DATA ref="#thirdparty.business-info.postal.postalcode"/>
+					<DATA ref="#thirdparty.business-info.postal.country"/>
+					<DATA ref="#thirdparty.business-info.postal.organization"/>
+					<DATA ref="#thirdparty.business-info.telecom"/>
+					<DATA ref="#thirdparty.business-info.telecom.telephone"/>
+					<DATA ref="#thirdparty.business-info.telecom.telephone.loccode"/>
+					<DATA ref="#thirdparty.business-info.telecom.telephone.number"/>
+					<DATA ref="#thirdparty.business-info.telecom.telephone.ext"/>
+					<DATA ref="#thirdparty.business-info.telecom.fax"/>
+					<DATA ref="#thirdparty.business-info.telecom.fax.loccode"/>
+					<DATA ref="#thirdparty.business-info.telecom.fax.number"/>
+					<DATA ref="#thirdparty.business-info.telecom.fax.ext"/>
+					<DATA ref="#thirdparty.business-info.telecom.mobile"/>
+					<DATA ref="#thirdparty.business-info.telecom.mobile.loccode"/>
+					<DATA ref="#thirdparty.business-info.telecom.mobile.number"/>
+					<DATA ref="#thirdparty.business-info.telecom.mobile.ext"/>
+					<DATA ref="#thirdparty.business-info.online"/>
+					<DATA ref="#thirdparty.business-info.online.email"/>
+					<DATA ref="#thirdparty.business-info.online.uri"/>
+					<DATA ref="#thirdparty.employer"/>
+					<DATA ref="#thirdparty.department"/>
+					<DATA ref="#business.name"/>
+					<DATA ref="#business.department"/>
+					<DATA ref="#business.contact-info"/>
+					<DATA ref="#business.contact-info.postal"/>
+					<DATA ref="#business.contact-info.postal.name.given"/>
+					<DATA ref="#business.contact-info.postal.name.family"/>
+					<DATA ref="#business.contact-info.postal.street"/>
+					<DATA ref="#business.contact-info.postal.city"/>
+					<DATA ref="#business.contact-info.postal.stateprov"/>
+					<DATA ref="#business.contact-info.postal.postalcode"/>
+					<DATA ref="#business.contact-info.postal.country"/>
+					<DATA ref="#business.contact-info.postal.organization"/>
+					<DATA ref="#business.contact-info.telecom"/>
+					<DATA ref="#business.contact-info.telecom.telephone"/>
+					<DATA ref="#business.contact-info.telecom.telephone.loccode"/>
+					<DATA ref="#business.contact-info.telecom.telephone.number"/>
+					<DATA ref="#business.contact-info.telecom.telephone.ext"/>
+					<DATA ref="#business.contact-info.telecom.fax"/>
+					<DATA ref="#business.contact-info.telecom.fax.loccode"/>
+					<DATA ref="#business.contact-info.telecom.fax.number"/>
+					<DATA ref="#business.contact-info.telecom.fax.ext"/>
+					<DATA ref="#business.contact-info.telecom.mobile"/>
+					<DATA ref="#business.contact-info.telecom.mobile.loccode"/>
+					<DATA ref="#business.contact-info.telecom.mobile.number"/>
+					<DATA ref="#business.contact-info.telecom.mobile.ext"/>
+					<DATA ref="#business.contact-info.telecom.pager"/>
+					<DATA ref="#business.contact-info.telecom.pager.loccode"/>
+					<DATA ref="#business.contact-info.telecom.pager.number"/>
+					<DATA ref="#business.contact-info.telecom.pager.ext"/>
+					<DATA ref="#business.contact-info.online"/>
+					<DATA ref="#business.contact-info.online.email"/>
+					<DATA ref="#business.contact-info.online.uri"/>
+				</DATA-GROUP>
+			</STATEMENT>
+		</POLICY>
+	</POLICIES>
+</META>

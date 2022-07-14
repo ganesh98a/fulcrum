@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+h1.moduleProjectInformationHeader {
+	font-size: 17px;
+	padding: 15px 0px;
+	border-top: 1px solid #B1B1B1;
+	border-bottom: 1px solid #B1B1B1;
+}
+
+.buttonProjectInfoWidget {
+	height: 35px;
+	font-size: 15px;
+}
+
+.moduleProjectInformationLeft {
+	width: 49%;
+	margin-right: 1%;
+	text-align: left;
+	float: left;
+}
+
+.moduleProjectInformationLeftForm, .moduleProjectInformationRightForm {
+	padding-bottom: 8px;
+	overflow: hidden;
+}
+
+.moduleProjectInformation {
+	label {
+		display: inline-block;
+		float: left;
+		padding-top: 8px;
+	}
+	input {
+		&:not([type='button']) {
+			float: left;
+			width: 70%;
+			border: 2px solid #b2b2b2;
+			height: 25px;
+			font-family: Arial, sans-serif;
+			color: #4e4f51;
+			font-size: 14px;
+			background: white url(/images/backgrounds/form-input.gif) repeat-x;
+			padding-left: 1%;
+		}
+		&[type='checkbox'] {
+			width: 18px;
+			padding: 0px;
+			margin: 0px;
+		}
+	}
+}
+
+.moduleProjectInformationLeftDropdown {
+	text-align: center;
+	width: 60%;
+	height: 35px;
+	color: #4e4f51;
+	font-size: 14px;
+	text-align: left;
+	padding: 0xp;
+	margin: 0px;
+}
+
+.moduleProjectInformation {
+	.width40 {
+		width: 40%;
+	}
+	.width30 {
+		width: 33%;
+		margin-right: 5px;
+	}
+}
+
+.moduleProjectInformationRight {
+	width: 45%;
+	text-align: left;
+	float: left;
+	overflow: hidden;
+	input {
+		float: left;
+		&[type='checkbox'] {
+			margin-top: 8px;
+			width: 18px;
+		}
+	}
+}

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+body {
+	font-size: large;
+}
+
+#sshareTopImage {
+	float: right;
+	border: 0px;
+	margin-right: 0px;
+	position: relative;
+	top: -20px;
+}
+
+.sshareTopHeader {
+	font-size: 115%;
+	font-weight: bold;
+}
+
+.sshareHeader {
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.sshareSubHeader {
+	font-size: 90%;
+	font-weight: bold;
+}
+
+.sshareText {
+	font-size: 75%;
+	text-indent: 1em;
+}
+
+.sshareSubText {
+	font-size: 75%;
+	font-weight: bold;
+}
+
+.techSpecsStripe {
+	width: 430px;
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	vertical-align: middle;
+}
+
+.techSpecsHeader {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.techSpecsGray {
+	background-color: #ebebeb;
+}
+
+.techSpecsKey {
+	format: inline-block;
+	width: 50%;
+}
+
+.sshareFooter {
+	margin-left: 0px;
+	text-align: left;
+	vertical-align: middle;
+	background-color: #000;
+}
+
+A.sshareFooter {
+	text-decoration: none;
+	font-size: 80%;
+	color: #fff;
+}
+A.sshareFooter:link, A.sshareFooter:visited {
+	text-decoration: none;
+	color: #fff;
+}
+A.sshareFooter:hover, A.sshareFooter:active {
+	text-decoration: none;
+	color: maroon;
+}

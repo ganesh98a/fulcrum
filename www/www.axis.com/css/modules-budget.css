@@ -1,0 +1,400 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+
+.input-costCode {
+	width: 70px;
+}
+
+.input-lineItem {
+	width: 200px;
+}
+
+.input-scheduled, .input-forecasted {
+	text-align: right;
+	width: 95px;
+}
+.input-buyout, .input-buyout {
+  text-align: right;
+  width: 95px;
+}
+
+.input-subcontracted, .input-variance {
+	width: 95px;
+	text-align: right;
+}
+
+.input-total {
+	font-weight: bold;
+}
+
+#tableSubcontractDetails th {
+	text-align: right;
+}
+#tableSubcontractDetails input {
+	width: 400px;
+	padding: 4px;
+}
+#tableSubcontractDetails input[type=text], .tableCreateSubcontract input[type=text] {
+	width: 239px;
+}
+#tableSubcontractDetails select, .tableCreateSubcontract select {
+	width: 250px;
+	padding: 4px;
+}
+
+#divModalWindow {
+	font-size: 0.9em;
+}
+.bs-dropdown-notitle {
+	padding: 1px 4px;
+	margin-bottom: 2px;
+	background: #fff;
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	margin-left: 7px;
+}
+.bs-dropdown-notitle:hover {
+	background: #eee;
+}
+
+#gcBudgetLineItemSubcontractorBidManagementModalDialog th, td {
+	vertical-align: top;
+}
+
+.bidderContactName {
+	display: inline-block;
+	white-space: nowrap;
+	width: 40%;
+}
+
+
+/** Customize Data Tables: Hide Sort Icons **/
+table.dataTable thead .sorting {
+	background: url("/images/1px.gif") no-repeat center right;
+}
+table.dataTable thead .sorting_asc {
+	background: url("/images/1px.gif") no-repeat center right;
+}
+table.dataTable thead .sorting_desc {
+	background: url("/images/1px.gif") no-repeat center right;
+}
+table.dataTable thead .sorting_asc_disabled {
+	background: url("/images/1px.gif") no-repeat center right;
+}
+table.dataTable thead .sorting_desc_disabled {
+	background: url("/images/1px.gif") no-repeat center right;
+}
+.circleBlack {
+	width: 8px;
+	height: 8px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	background: #000;
+	margin-right:3px;
+	display: table-cell;
+}
+.circleRed {
+	width: 8px;
+	height: 8px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	background: red;
+	margin-right:3px;
+	display: table-cell;
+}
+.floadCircle{
+	float:right;
+}
+.costCodeImport tr td, .costCodeImport tr th {
+	border-right:1px solid #B0A6A6;
+	border-bottom:1px solid #B0A6A6;
+}
+.h3header{
+	color:#3487c7;
+}
+.process-step {
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid #e7dede;
+}
+.process-step .line {
+  height: 2px;
+  position: absolute;
+  background: #ececec;
+  left: 16%;
+  right: 20%;
+  top: -28px;
+  bottom: 0;
+  z-index: -1;
+  margin: auto;
+}
+.process-step ul {
+  padding: 0;
+}
+.process-step ul li {
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.process-step ul li.active .number {
+  background: #2ca01c;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.process-step ul li.active .name {
+  color: #333333;
+}
+.process-step ul li .number {
+  background: #ffffff;
+  border: 2px solid #e9e4e4;
+  color: #999999;
+  border-radius: 50%;
+  width: 30px;
+  line-height: 30px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+.process-step ul li .name {
+  display: block;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: #999999;
+}
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 31px;
+  display: inline-block;
+}
+.upload-btn-wrapper .btn {
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: #666666;
+  padding: 8px 20px;
+}
+.upload-btn-wrapper input[type=file] {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 90px;
+  height: 35px;
+}
+.input-group-default {
+    position: relative;
+    display: table;
+    margin-bottom: 10px;
+    border-collapse: separate;
+}
+.input-group-default .form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    display: table-cell;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+    height: 22px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.input-group-default .input-group-addon {
+    position: relative;
+    left: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-left-color: rgb(204, 204, 204);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.input-group-default .input-group-addon,
+.input-group-default .input-group-btn {
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.input-group-default .form-control,
+.input-group-default .input-group-addon,
+.input-group-default .input-group-btn {
+    display: table-cell;
+}
+
+.qb-table {
+   font-family: sans-serif;
+   border-collapse: collapse;
+   width: 100%;
+   margin-bottom: 20px;
+   font-size: 15px;
+}
+.qb-table th, .qb-table td {
+   padding: 8px;
+   border: 1px solid #dddddd;
+   text-align: left;
+}
+.qb-table th {
+  border-width: 2px;
+  background: #3b90ce;
+  color: #fff;
+}
+.qb-table select {
+  width: 100%;
+  height: 28px;
+}
+
+.btn-disable:disabled {
+  cursor: not-allowed;
+	opacity: 0.6;
+}
+
+.table-fixed-thead {
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+.table-fixed-thead .t-head {
+	margin-right: 17px;
+}
+.table-fixed-thead ul {
+	padding: 0;
+	overflow: hidden;
+  clear: both;
+	margin: 0;
+	border-bottom: 1px solid #dcdcdc;
+}
+.table-fixed-thead ul li {
+	list-style: none;
+	float: left;
+	font-size: 12px;
+	padding: 6px;
+	border-right: 1px solid #dcdcdc;
+}
+.table-fixed-thead ul li:last-child {
+  border-right:none;
+}
+.table-fixed-thead .t-head li {
+	height: 33px;
+	white-space: nowrap;
+  font-weight: 600;
+}
+.table-fixed-thead .view-list {
+	max-height: 400px;
+	overflow-y: scroll;
+}
+.table-fixed-thead .view-list ul li {
+	position: relative;
+}
+.table-fixed-thead .view-list ul li:before {
+  content: "";
+	border-left: 1px solid #dcdcdc;
+	position: absolute;
+  left: -1px;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+}
+.dcr-edit .popover{
+  display: none !important;
+}
+.subcontract-list-group {
+  clear: both;
+  overflow: hidden;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+.subcontract-list-group .list-group-item {
+  float: left;
+  margin-right: 15px;
+  border: none;
+  border-radius: 4px;
+  background:#dfdcdc;
+  margin-bottom: 15px;
+  /*width: 115px;*/
+  text-align: center;
+}
+.subcontract-list-group .list-group-item:hover {
+  text-decoration: none !important;
+}
+.subcontract-list-group .list-group-item.active {
+  background-color: #428bca !important;
+}
+
+.preview-subcontract {
+  width: 50%;
+  float: left;  
+}
+
+.budget-contract-pagespace {
+  padding: 20px;
+}
+
+.subcontract-document .boxViewUploader, 
+.subcontract-document .boxViewUploader .qq-upload-button {
+  width: 160px !important;
+  margin:0 auto;
+}
+span.red-text {
+  color: #e74a3b;;
+}
+span.green-text {
+  color: #1cc88a;
+}
+
+.dropdown-content-change-order{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 230px;
+  right: 465px;
+  top: auto;
+  max-height: 205px;
+  overflow-y: auto;
+  box-shadow: 0 3px 4px -2px #989898;
+  z-index: 1;
+  border: 1px solid #bdb8b8;
+  border-radius: 13px;
+  color: #06c !important;
+  padding: 2px 5px 0;
+}
+.show_cont_change_order {display: block;}

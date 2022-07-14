@@ -1,0 +1,450 @@
+Service Details. started - 01-06-2018
+
+1.Login service
+	Url		- Api/RN_Login.php
+	Params	- username, password
+	Method	- GET, POST
+
+2.Menu Permission & Projects
+	Url		- Api/RN_Menu.php
+	Params	- token
+	Method	- GET, POST
+
+3.SubMenu With their module permissions
+	Url		- Api/RN_SubMenu.php
+	Params	- token, software_category_module_id
+	Method	- GET, POST
+
+4.DailyLog
+	Url		- Api/RN_DailyLog.php
+	Params	- token, tab, project_id
+	Params(opt)	- date, page
+	Method	- GET, POST
+	
+	4.1.Get Manpower details
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=1,
+					  project_id
+					  jobsite_daily_log_id
+		Params(opt)	- date, page
+		Method		- GET, POST
+
+	4.2.ManpowerSave
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  jobsite_daily_log_id,
+					  subcontract_id,
+					  number_of_people,
+					  project_id,
+					  tab=ManpowerDataSave
+		Params(opt)	- date
+		Method		- GET, POST
+
+	4.3.Get SiteworkActivity
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=2,
+					  jobsite_daily_log_id,
+					  project_id
+		Params(opt)	- date, page
+		Method		- GET, POST
+
+	4.4.SiteworkActivitySave
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=SiteworkDataSave,
+					  jobsite_daily_log_id,
+					  jobsite_activity_id,
+					  project_id
+		Params(opt)	- date
+		Method		- GET, POST
+
+	4.5.Get BuildingActivity
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=3,
+					  jobsite_daily_log_id,
+					  project_id,
+					  filterby = 1 (or) 0
+		Params(opt)	- date, page
+		Method		- GET, POST
+
+	4.6.BuildingActivitySave
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=BuildingDataSave,
+					  jobsite_daily_log_id,
+					  jobsite_activity_id,
+					  cost_code_id,
+					  project_id
+		Params(opt)	- date
+		Method		- GET, POST
+
+	4.7.Details tab
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=4,
+					  jobsite_daily_log_id,
+					  project_id
+		Params(opt)	- date
+		Method		- GET, POST
+
+	4.8.Inspection Save
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=InspectionDataSave,
+					  jobsite_daily_log_id,
+					  method=Create,
+					  jobsite_inspection_passed_flag= Y (or) N,
+					  jobsite_inspection_type_id,
+					  jobsite_inspection_note,
+					  project_id
+		Params(opt)	- date
+		Method		- GET, POST
+
+	4.9.InspectionDataDelete
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=InspectionDataSave,
+					  jobsite_daily_log_id,
+					  method=Delete,
+					  jobsite_inspection_id,
+					  project_id
+		Params(opt)	- date
+		Method		- GET, POST
+
+	4.10.DelayDataSave
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=DelayDataSave,
+					  jobsite_daily_log_id,
+					  method=Create,
+					  jobsite_delay_category_id,
+					  jobsite_delay_subcategory_id,
+					  jobsite_delay_note,
+					  project_id
+		Params(opt)	- date
+		Method		- GET, POST
+
+	4.11.DelayDataSave
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=DelayDataSave,
+					  jobsite_daily_log_id,
+					  method=Delete,
+					  project_id,
+					  jobsite_delay_id
+		Params(opt)	- date
+		Method		- GET, POST
+
+	4.12.NotesDataSave
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=NotesDataSave,
+					  jobsite_daily_log_id,
+					  jobsite_note,
+					  jobsite_note_type_id,
+					  project_id
+		Params(opt)	- date
+		Method		- GET, POST
+
+	4.13.DeleteUploadedDoc
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=ManpowerDocDelete,
+					  jobsite_daily_log_id,
+					  method,
+					  project_id
+		param(method) - 1.jobsite_sign_in_sheets, jobsite_sign_in_sheet_id
+						2.jobsite_field_reports, jobsite_field_report_id
+						3.jobsite_photos ,jobsite_photo_id
+		Params(opt)	- date
+		Method		- GET, POST
+
+	4.14.DCR Preview
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=5,
+					  jobsite_daily_log_id ,
+					  project_id
+		Params(opt)	- date
+		Method		- GET, POST
+
+	4.15.UploadDoc
+		Url			- Api/RN_DailyLog.php
+		Params(*)	- token,
+					  tab=UploadDoc,
+					  jobsite_daily_log_id,
+					  allowed_extensions,
+					  append_date_to_filename = 0,
+					  folder_id,
+					  id,
+					  method=uploadFiles,
+					  virtual_file_name,
+					  virtual_file_path,
+					  virtual_file_path,
+					  file,
+					  prepend_date_to_filename=1,
+					  method_save,
+					  project_id
+		Params(opt)	- date
+		param(method_save) 	- 1.jobsite_sign_in_sheets, jobsite_sign_in_sheet_id
+							2.jobsite_field_reports, jobsite_field_report_id
+							3.jobsite_photos ,jobsite_photo_id
+		Method		- POST
+
+5.Impersonate
+	Url			- Api/RN_Impersonate.php
+	Params(*)	- impersonate_user_company_id,
+				  impersonate_user_id 
+	Method		- GET, POST
+
+6. Get Projects
+	Url			- Api/RN_Projects.php
+	Params(opt)	- impersonate_user_id
+	Method		- GET, POST
+
+phase -2 (28-08-2018 **) 
+
+7. Submittals
+	Url			- Api/RN_Submittals.php
+	Params(*)	- project_id,
+				  page, per_page,token
+	param(sort)	- ASC, DESC
+	param(FilterType) - cost_code, contractor
+	param(FilterValue)- costCode (ex. 01-100) or subcontractor name (ex. Advent)
+	param(sort)	- ASC, DESC
+	param(FilterValue) - All, Open, Closed
+	Method		- GET, POST
+	
+8. RFI
+	Url			- Api/RN_Rfis.php
+	Params(*)	- project_id,
+				  page, per_page, token
+	param(sort)	- ASC, DESC
+	param(FilterValue) - All, Open, Closed
+	Method		- GET, POST
+
+phase -3 (28-09-2018)
+
+9. Meetings
+	Url			- Api/RN_Meetings.php
+	Params(*)	- project_id, token, meeting_type_id, meeting_id, discussion_item_id, 
+				  sort_order, active_index, view
+	Param(view) - MeetingData, DiscussionItem, DownloadPDF
+				  1. If view is "DiscussionItem" Need to add mentatory fields 'discussion_item_id'
+				  2. If view is "UpdateDiscussionItem" Need to add mentatory fields 'meeting_id, ort_order, active_index'
+	Method		- GET, POST
+
+phase -4 (25-10-2018)
+	
+9. Budget
+	Url			- Api/RN_Budget.php
+	Params(*)	- project_id, token, page, per_page
+	Params(opt)	- scheduled_values_only, needed_buy_out
+	Method		- GET, POST
+
+phase -5 (0-12-2018)
+10. Punch List
+	Url			- Api/RN_PunchItem.php
+	Params(*)	- project_id, token, page, per_page, draft_flag (Y, N), method, 
+	Method		- GET, POST
+	Param(method) - ListPunchItem, GetRecipient, GetRoom, CreatePunchItem, EditAndSaveDraft, DeleteDraft, SendDraft, UploadDoc, DeleteUploadDoc, UpdateStatus, CreatePunchItemData
+	-
+	List of param(method)
+	-
+		10.1. ListPunchItem
+			  Params(*)	- draft_flag (Y, N)
+			  Params(opt)	- filter_type, filter_value, filter_status
+				1. filter_type - by_subcontractor,by_building,by_room
+				2. filter_value - based on filter type value
+				3. filter_status - based on status (1-Open or 2-Completed)
+		10.2. GetRecipient
+			  Param(*) 	- project_id, token, cost_code_id (get recipient based on costcode)
+
+		10.3. GetRoom
+			  Param(*) 	- project_id, token, building_id (get rooms list based on selected building id)
+
+		10.4. CreatePunchItem
+			  Param(*)	- project_id, token, location_id, room_id, recipient_contact_id, due_date
+			  Param(*-opt)- (description_id, description_txt) (or) description
+
+		10.5. EditAndSaveDraft
+			  Param(*)	- project_id, token, location_id, room_id, recipient_contact_id, due_date, punch_item_id, status_id
+			  Param(*-opt)- (description_id, description_txt) (or) description
+
+		10.6. DeleteDraft
+			  Param(*)	- token, punch_item_id
+
+		10.7. SendDraft (or) SendNotification
+			  Param(*)	- token, punch_item_id (more than one ex. 1,2,3), subcontractor_id
+
+		10.8. UploadDoc
+			  Params(*)	- token,
+			  			  tab=UploadDoc,
+			  			  allowed_extensions,
+			  			  append_date_to_filename = 0,
+			  			  folder_id,
+			  			  id,
+			  			  method=uploadFiles,
+			  			  virtual_file_name,
+			  			  virtual_file_path,
+			  			  virtual_file_path,
+			  			  file,
+			  			  prepend_date_to_filename=1,
+			  			  method_save,
+			  			  project_id
+			  Method	- POST
+
+		10.9. DeleteUploadDoc
+			  Param(*) - token, file_manager_file_id, punch_item_id (punch_item_id optional of create new punchitem)
+
+		10.10. UpdateStatus
+			  Param(*) - token, punch_item_id, status_id
+
+		10.11. CreatePunchItemData
+			  Param(*) - token, project_id
+	
+	
+phase -6 (0-2-2019)
+
+11. Reports
+	Url			  - Api/RN_Reports.php
+	Params(*)	  - project_id, token, method
+	Method		  - GET, POST
+	param(method) - GetReportsData, GetDownloadRecords
+	-
+	List of param(method)
+	-
+	11.1. GetReportsData
+		  Param(*) - project_id, token
+	11.2. GetDownloadRecords
+		  Param(*) - reportsStartDate, reportsEndDate, downloadType, reportType, filterType, 
+		             filterBy
+		  Param(downloadType) - pdf, excel
+		  Param(reportsStartDate, reportsEndDate) - dates is mandatory based on report
+		  Param(filterType, filterBy) - filters is  mandatory based on report
+		  Param(reportType) - Project Delay Log,
+							  Daily Construction Report (DCR),
+							  ContractLog,
+							  Detailed Weekly,
+							  Weekly Manpower,
+							  Monthly Manpower,
+							  Manpower summary,
+							  Weekly Job,
+							  RFI Report - by ID,
+							  RFI Report - Q&A - Open,
+							  Submittal Log - by Notes,
+							  Submittal Log - by ID,
+							  Submittal Log - by status,
+							  Submittal log - by Cost Code,
+							  Bidder List,
+							  Meetings - Tasks,
+							  SCO,
+							  Change Order,
+							  Sub List,
+							  Current Budget,
+							  Buyout
+
+phase -7 (28-03-2019)
+
+12. Contact List
+	Url		- Api/RN_ContactList.php
+	Params	- token, project_id
+	Method	- GET, POST
+
+phase - 8 (01-08-2019)
+
+13. DailyLog Cleanse
+
+phase - 9 (01-08-2019)
+
+13. DailyLog Wizard
+
+14. Punch List rewamp
+
+phase - 10 (01-08-2019)
+13. Task Summary
+	Url			- Api/RN_TaskSummary.php
+	Params		- token, project_id, view, per_page, page, filterValue, notification_id, date_format_type, action_item_type_id, filter_by_date , action_item_id, completed_date
+	Method		- GET, POST
+	param(view) - TotalList, ListData, ActionItemUpdate
+	-
+	List of param(view)
+	-
+	15.1. TotalList
+		Params	- token, project_id, view - TotalList
+	15.2. ListData
+		Params(*)			- token, project_id, view - TotalList, per_page, page, filterValue, 
+							  date_format_type
+		date_format_type	- 0 (or) 1 (or) 2 (or) 3 (or) 4 (or) 5
+							  0 - "Open Tasks",
+							  1 - "0 - 7 days",
+							  2 - "7 - 15 days",
+							  3 - "Over due",
+							  4 - "TBD",
+							  5 - "Completed Tasks"
+		action_item_type_id - 1 (or) 5 (or) 7
+							  1 - "Meeting Minutes",
+							  5 - "RFI",
+							  7 - "Submittal",
+		filter_by_date      - 08/07/2019 (m/d/y)
+		(optional)
+
+	15.3. ActionItemUpdate
+		Param(*)			 - token, project_id, view - AIDateUpdate, date_format_type, action_item_id, 
+		action_item_type_id  - 1 (or) 5 (or) 7
+		completed_date 		 - 08/07/2019 (m/d/y)
+		action_item_id       - selected item id for update
+
+phase - 11 (20-08-2019)
+14. FileManager
+	Url			  - Api/RN_FileManager.php
+	Params		  - token, project_id, dir, isTrash, method
+	Method		  - GET, POST
+	param(method) - LoadFiles
+	-
+	List of param(method)
+	-
+	16.1. LoadFiles
+		Param(*) 			 - token, project_id (List All folder within project folder with Company and trash folder defaulty)
+		Params(additional)   - dir, isTrash
+							   1. if param(dir) passing value(ie id-1131) it's list the  specific folder of passed id
+							   2. if param(trash) passing value (true, false) with param(dir) it's list the folders with the specific folder of passed id (only trash folders)
+	
+phase - 12 (20-08-2019) no Api required
+17. Push Notification User Device Info
+
+phasr - 13 (11-09-2019)
+15. User Notification (bell icon)
+	Url		  	  - Api/RN_Notifications.php
+	Params		  - token, project_id, method, per_page, page, filterValue, notification_id
+	Method		  - GET, POST
+	param(method) - ListAllNotification, OverAllUnReadCount, StatusUpdate, ActionItemUpdate, MarkAsAllRead
+	-
+	List of param(method)
+	-
+	18.1. ListAllNotification
+		Url		  - Api/RN_TaskSummary.php
+		Params(*) - token, project_id, method - ListAllNotification
+		Params(optional) - filterValue (Y - Readed, N - Unreaded)
+
+	18.2. OverAllUnReadCount
+		Params(*) - token, project_id, method - OverAllUnReadCount
+
+	18.3. StatusUpdate
+		Url		  - Api/RN_TaskSummary.php
+		Params    - token, project_id, method, notification_id
+		Params(*) - token, project_id, method - StatusUpdate, notification_id - 1 or 				something
+
+	18.4. ActionItemUpdate
+		Url					 - Api/RN_TaskSummary.php
+		Param(*)			 - token, project_id, view - AIDateUpdate, date_format_type, action_item_id, 
+		action_item_type_id  - 1 (or) 5 (or) 7
+		completed_date 		 - 08/07/2019 (m/d/y)
+		action_item_id       - selected item id for update
+
+	18.4. MarkAsAllRead
+		Url		 - Api/RN_TaskSummary.php
+		Param(*) - token, project_id	

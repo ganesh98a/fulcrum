@@ -1,0 +1,400 @@
+.currentBudgetNestedTable tr td {
+	border-right:0px !important;
+}
+
+.buyoutNestedTable tr td {
+	border-right:0px !important;
+}
+
+.CellBorderTop{
+	border-top:1px solid #CBC8C8;
+}
+
+.celborderleftright {
+	/* border-left:1px solid #CBC8C8;*/
+	border-right:1px solid #CBC8C8;
+}
+
+.fontSize16{
+	font-size:16pts;
+	/*text-decoration:underline;*/
+	font-family: 'Calibri-bold';
+	text-transform:uppercase;
+	border-bottom:1px solid #3487c7;
+}
+
+.cellRTNotWback
+{
+	border-top:none !important;
+	background: #fff;
+}
+
+.comment-table tr .BotBord {
+	border-bottom: 1px solid #CBC8C8;
+}
+.comment-table tr{
+	vertical-align:top;
+}
+
+.project_name{
+	text-align:center;
+	text-decoration:underline;
+	font-size:18pts;
+	text-weight:Bold;
+	text-transform : uppercase;
+}
+
+.marginleftMet{
+	margin-left:60px;
+}
+
+.detailed_week tr th{
+	text-transform:uppercase;
+}
+
+body{
+	/*font-size : 15pts;*/
+	$meetingCss
+}
+
+.headerSize18{
+	/*font-size:16pts;*/
+	text-transform : uppercase;
+}
+
+/*meeting report css*/
+
+.ActionItemAssigneesTable tr td{
+	border:0 !important;
+}
+
+.marginDiscussionitem{
+	margin:10px;
+}
+
+.borderDownNot{
+	border-bottom: none !important;
+}
+
+.textUdCal{
+	/*text-decoration:underline;*/
+	border-bottom:1px solid #000;
+	color:#000;
+}
+
+.paragraphBoldCal{
+	font-family: 'Calibri-bold';
+}
+
+.textUd{
+	text-decoration:underline;
+	color:#000;
+}
+
+.tableHeaderInnerMeeting{
+	color:#3487c7;
+	font-weight:semi-bold;
+}
+
+.paragraphMargin{
+	margin:0;
+	font-weight:normal;
+}
+.paragraphBold{
+	font-weight:bold;
+}
+
+#MeetingTableWithDiscussion tr .TDBorderTop{
+	border-top:1px solid #CBC8C8;
+	border-bottom:1px solid #CBC8C8;
+}
+
+#MeetingTableWithDiscussion tr .TDBorder{
+	border-bottom:1px solid #CBC8C8;
+}
+
+#MeetingTableWithDiscussion tr .cellBorder, #MeetingTableWithDiscussion tr th{
+	border-right:1px solid #CBC8C8;
+	border-bottom:1px solid #CBC8C8;
+}
+
+#MeetingTableWithDiscussion tr .tdBold {
+	font-weight : bold;
+}
+
+.MeetingTableWithInfo tr td, .MeetingTableWithInfo tr th{
+	border-right:1px solid #CBC8C8;
+}
+
+/*Bid list css*/
+
+.oddRow, .oddRowNotClickable {
+	background-color: #efefef;
+}
+.borederRowBid td{
+	border-bottom: 1px solid #cbc8c8;
+	border-top: 1px solid #cbc8c8;
+}
+
+/*Manpower css*/
+
+#manpower_activity_monthly tr td,#manpower_activity tr td,#manpower_activity tr th{
+	border:1px solid #8E8787;
+}
+
+#manpower_activity_monthly{
+	font-size:6px;
+}
+
+/*Manpower css end*/
+
+#RFiReportQA .marginTopborder{
+	border-top:1px solid #000;border-bottom:1px solid #000;
+}
+
+#PurchaseingLog,#ForecastLog{
+	width:100%;
+}
+
+.backwhite{
+	background-color: whitesmoke;
+}
+
+.bold{
+	font-weight:bold;
+}
+
+.borderBottom {
+	border-bottom: 1px solid #bbb;
+}
+
+th, 
+td
+{
+	font-size: 10px !important;
+}
+
+.altColors tr:nth-child(2n+1) {
+	background-color: #fff;
+}
+
+.altColors tr:nth-child(2n) {
+	background-color: whitesmoke;
+}
+
+.detailed_week,.tableborder{
+	margin-bottom:1%;
+	border:1px solid ;
+}
+
+.even{
+	background-color:#f5f5f5;
+}
+
+.odd{
+	/*background-color:#E4E2E0;*/
+}
+
+td p, .con_jus,.text-justify{
+	text-align:justify;
+	text-wordwrap:wordbreak;
+}
+
+.align-left,.textAlignLeft{
+	text-align:left;
+}
+.align-right{
+	text-align:right;
+}
+
+.align-center{
+	text-align:center;
+}
+
+.table-header{
+	margin:0;
+	padding:0;
+}
+
+.report-name{
+	font-size:12px;
+	font-weight:bold;
+	text-transform: uppercase;
+}
+
+.line-break{
+	border:0.5px solid;
+}
+
+.repot-inform{
+	background-color:#2481c3;
+	color:#fff;
+	padding:5px;
+	margin-bottom:5px;
+}
+
+.table-headerinner{
+	background-color:#2481c3;
+	color:#fff;
+	font-weight:lighter;
+}
+
+#report_html{
+	/*border:1px solid;*/
+	font-size:18px;
+}
+
+.total_bold{
+	font-weight:bold;
+}
+
+.center-align,.textAlignCenter{
+	text-align:center;
+}
+
+.table_header_td{
+	font-size:12px !important;
+	color:#000;
+}
+
+.marginTopborderMT
+{
+	border-top: 1px solid #cbc8c8;
+}
+
+.marginrightborderMT
+{
+	border-right: 1px solid #cbc8c8;
+}
+
+@page { margin: 110px 50px 80px 50px; }
+.header{position: fixed; top:-110px;}
+.footer { position: fixed;  bottom: 10px; right: 30px; height: 30px;font-size:10px;left:30px; border:1px solid red;}
+.cellRTNot
+{
+	border-right:1px solid #CBC8C8;
+	border-bottom:1px solid #CBC8C8;
+}
+.comment-table tr .BotBord {
+	border-bottom: 1px solid #CBC8C8;
+}
+.comment-table tr{
+	vertical-align:top;
+}
+.ActionItemAssigneesTable tr td{
+	border:0 !important;
+}
+.textUpper{
+	text-transform : uppercase;
+}
+.nowrapspace{
+	word-wrap:nowrap;white-space:nowrap;
+}
+#currentBudgetReportUnits{
+
+	border-collapse: collapse;
+	border-left: 1px solid #adadad;
+	border-top: 1px solid #adadad;
+}
+#currentBudgetReportUnits td{
+	border-bottom: 1px solid #adadad;
+	border-right: 1px solid #adadad;
+	empty-cells: show !important;
+	padding: 4px;
+	vertical-align: bottom;
+}
+#currentBudgetTblTabularData th, #uncommitted_contracts_table th, #committed_contracts_table th{
+	border-right: 1px solid #fff !important;
+}
+/*sco css*/
+#SubcontracttblTabularData, #ChangeOrdertblTabularData, #currentBudgetTblTabularData{
+
+	border-collapse: collapse;
+	border-left: 1px solid #000;
+	border-top: 1px solid #000;
+}
+#uncommitted_contracts_table, #committed_contracts_table{
+	border-collapse: collapse;
+	border-left: 1px solid #adadad;
+	border-top: 1px solid #adadad;
+}
+#SubcontracttblTabularData thead th{
+	border-bottom: 1px solid #fff !important;
+	border-right: 1px solid #fff !important;
+	empty-cells: show !important;
+	padding: 4px;
+	vertical-align: bottom;
+}
+#ChangeOrdertblTabularData thead th{
+	border-bottom: 1px solid #adadad !important;	
+	empty-cells: show !important;
+	padding: 4px;
+	vertical-align: bottom;
+}
+#SubcontracttblTabularData td, #ChangeOrdertblTabularData td, #currentBudgetTblTabularData td, #uncommitted_contracts_table td, #committed_contracts_table td{
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	empty-cells: show !important;
+	padding: 4px;
+	vertical-align: bottom;
+}
+#SubcontracttblTabularData td, #ChangeOrdertblTabularData td, #currentBudgetTblTabularData td, #uncommitted_contracts_table td, #committed_contracts_table td
+{
+	border-bottom: 1px solid #adadad;
+	border-right: 1px solid #adadad;
+}
+#SubcontracttblTabularData td, #ChangeOrdertblTabularData td, #currentBudgetTblTabularData td, #uncommitted_contracts_table td, #committed_contracts_table td
+{
+	font-size: 11px !important;
+	border-bottom: 1px solid #adadad;
+	border-right: 1px solid #adadad;
+}
+.textAlignLeft { text-align: left; }
+.textAlignCenter { text-align: center; }
+.textAlignRight { text-align: right; }
+.purStyle {background: #dfdfdf;}
+.purtotStyle{background: #8B8E90;}
+.headsle{	color: #026dae ;font-size: 12px;}
+.permissionTableMainHeader td{
+	font-weight:bold !important;
+}
+.permissionTableMainHeader{
+	background: #3b90ce;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	vertical-align: bottom;
+	border-color:#ffffff;
+}
+.permissionTableMainHeaderTd {
+	background: #3b90ce;
+}
+.permissionTableMainHeaderTd td {
+	/*border-left: 1px solid #000 !important;*/
+	font-weight:bold !important;
+	background: #3b90ce !important;
+	padding: 5px 10px !important;
+	font-size: 20px !important;
+	color: white !important;
+}
+/*sco end*/
+.focastPad td {
+	padding: 2px 0px !important;
+}
+.focastPadTotal td {
+	padding: 5px 0px !important;	
+}
+.focastPadTop td {
+	padding: 5px 0px 0px 0px !important;	
+}
+.focastPadSubTotal td {
+	background: #d9d9d9;
+	padding: 2px 0px !important;
+	text-transform: uppercase; 
+	font-weight:bold;
+}
+#vectorReportBudgetTable tr td,#vectorReportBudgetTable tr th {
+	border: 1px solid #adadad;
+	border-collapse: collapse;
+	font-size:8px !important;
+}

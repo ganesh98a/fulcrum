@@ -1,0 +1,384 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+
+/* Overriding ugly/inconvenient jQuery styles - begin */
+.ui-state-default, .ui-state-active, .ui-state-hover, .ui-widget-content, .ui-widget-header {
+	border: 0 !important;
+	background: #fff !important;
+	color: #000 !important;
+}
+.ui-state-active a:link, .ui-state-active a:visited {
+	color: #000 !important;
+}
+.ui-state-default .dropdown a:link, .ui-state-default .dropdown a:visited {
+	color: #000;
+}
+/* Overriding ugly/inconvenient jQuery styles - end */
+
+/* Uploaders need custom styles in this module - begin */
+.uploader-container, .accordion-header-widget {
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+.accordion-header-widget > div, .accordion-header-widget > span, .uploader-container > div, .uploader-container > span {
+	float: left;
+	display: inline-block;
+}
+.boxViewUploader {
+	width: auto;
+	font-size: 70%;
+	white-space: nowrap;
+}
+.boxViewUploader .qq-upload-button, .boxViewUploader .qq-upload-drop-area {
+	width: 70px;
+	line-height: 20px;
+	padding: 0 5px;
+	font-size: 11px;
+}
+.dropdown-placeholder {
+	width: 18px;
+	height: 20px;
+	display: inline-block;
+}
+.button-static-uploader {
+	float: left;
+	border-radius: 3px;
+	border: 1px solid #aaa;
+	background: white;
+	padding: 3px 5px;
+}
+.button-static-uploader.has-right-sibling {
+	border-radius: 3px 0 0 3px;
+}
+.btn.btn-default.dropdown-toggle {
+	border: 1px solid #aaa;
+	background: white;
+	border-radius: 3px;
+}
+.file-dropdown {
+	border-radius: 0 3px 3px 0 !important;
+	border-left: 0 !important;
+}
+.dropdown, .dropdown button, .button-static-uploader {
+	height: 22px;
+}
+.btn.btn-default.dropdown-toggle:hover, .button-static-uploader:hover {
+	background-color: #f3f3f3;
+	border-color: #999;
+}
+.btn.btn-default.dropdown-toggle:active, .button-static-uploader:active {
+	background-color: #e8e8e8;
+}
+
+.bootstrap-dropdown-clone {
+	border: 1px solid #aaa;
+	background: white;
+	border-radius: 3px;
+}
+.bootstrap-dropdown-clone:hover {
+	background-color: #f3f3f3;
+	border-color: #999;
+}
+.bootstrap-dropdown-clone:active {
+	background-color: #e8e8e8;
+}
+
+.bid-actions, .bid-actions button {
+	height: 24px;
+	overflow: visible;
+	/*
+	width: 120px;
+	white-space: nowrap !important;
+	*/
+	white-space: nowrap;
+}
+.bid-actions input {
+	position: relative;
+	top: 3px;
+}
+
+/* Uploaders need custom styles in this module - end */
+
+
+.ui-accordion-content {
+	overflow: initial !important;
+}
+td .dropdown-toggle {
+	padding: 1px 4px 3px !important;
+}
+#divBidding {
+	/* max-width: 1400px; */
+}
+.accordion-header, .subaccordion-header {
+	background-color: #fff;
+	border: 1px solid #fff !important;
+}
+.accordion-header:hover, .subaccordion-header:hover {
+	background-color: #f6f6f6 !important;
+	border: 1px solid #eee !important;
+}
+.accordion-content {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.subaccordion-header {
+	border-bottom: 1px solid #aaa !important;
+	/* border-top: 1px solid #aaa !important; */
+	position: relative;
+}
+.subaccordion-header:hover {
+	border-bottom: 1px solid #aaa !important;
+}
+.accordion-header .title {
+	font-size: 1.2em;
+}
+.subaccordion-header .title {
+	font-weight: bold;
+}
+.subaccordion-content {
+	padding: 0 20px 10px;
+}
+.uploader {
+	font-size: 90%;
+	float: left;
+	margin: 0 3px;
+}
+.subcontractor-bid-group {
+	width: 100%;
+}
+.subcontractor-bid-group th, .subcontractor-bid-group td {
+	padding: 5px 15px;
+}
+.subcontractor-bid-group td {
+	white-space: nowrap;
+}
+.subcontractor-bid-group td .boxViewUploader {
+	float: left;
+}
+#ulSelectedBidders {
+	list-style: none;
+	margin: 10px;
+	padding: 0;
+}
+#ulSelectedBidders li {
+	margin: 5px;
+}
+#ulSelectedBidders li span {
+	display: inline-block;
+	min-width: 15%;
+	margin: 0 20px;
+	white-space: nowrap;
+}
+#ulSelectedBidders li span:first-of-type {
+	min-width: 25%;
+}
+#ulSelectedBidders li span:last-of-type {
+	min-width: 25%;
+}
+.small-font {
+	font-size: 90%;
+}
+.underline {
+	text-decoration: underline;
+}
+.project-level-uploaders {
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	padding-right: 20px;
+}
+.dib {
+	display: inline-block;
+}
+.dib100 {
+	display: inline-block;
+	width: 100px;
+}
+.clearfix {
+	clear: both;
+}
+.l-4 {
+	left: -4px;
+}
+.listTable tbody tr:nth-child(even) {
+	background: #f0f0f0;
+}
+.listTable tbody tr:not(.no-click):hover {
+	background: #3b90ce;
+	cursor: pointer;
+}
+.popover-content {
+	font-size: 85%;
+}
+td.checkbox {
+	padding-left: 25px;
+}
+ul.contacts {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+ul.contacts li {
+	display: inline-block;
+	margin: 5px;
+}
+textarea.email-body {
+	width: 100%;
+	height: 100px;
+}
+.dropdown-menu a {
+	cursor: pointer;
+}
+.accordion-link {
+	font-size: 11px;
+	margin: 0 10px;
+}
+.accordion-link a {
+	color: #06c !important;
+	cursor: pointer;
+}
+.accordion-link a:hover {
+	text-decoration: underline;
+}
+.accordion-link a:active {
+	color: darkred;
+}
+
+.qq-hide {
+	display: none !important;
+}
+.qq-upload-button, .qq-upload-drop-area {
+	width: auto;
+	padding: 3px 5px;
+	background: white;
+	color: black;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	font-size: 11px;
+	height: initial;
+	min-height: initial;
+}
+.qq-upload-button:hover, .qq-upload-drop-area:hover {
+	background: #f6f6f6;
+	border: 1px solid #999;
+}
+.qq-upload-button.has-right-sibling, .qq-upload-drop-area.has-right-sibling {
+	border-radius: 3px 0 0 3px;
+}
+.qq-upload-drop-area span {
+	font-size: 11px;
+	white-space: nowrap;
+	position: static;
+	margin: 0;
+}
+.qq-upload-drop-area-active {
+	background: #ddd;
+	border: 1px solid #999;
+}
+.qq-upload-list {
+	/*display: none;*/
+}
+.fineUploader {
+	float: left;
+}
+
+.ui-accordion .ui-accordion-content {
+	/* border-top: 0; */
+	margin: 0;
+	overflow: auto;
+	overflow: visible;
+	padding: 0px;
+}
+
+.biddingHeaderMenu table {
+	margin: 0;
+	padding: 0;
+}
+
+.biddingHeaderMenu td {
+	vertical-align: bottom;
+	white-space: nowrap;
+}
+
+.biddingExpertMode {
+	visibility: hidden;
+}
+
+.biddingCheckboxToggle {
+	font-size: 11px;
+}
+
+.dropdown-menu input {
+	margin-top: 2px;
+	margin-right: 5px;
+	padding: 3px;
+	padding-top: 6px;
+}
+.dropdown-menu label {
+	margin: 0;
+	clear: both;
+    color: #333333;
+    display: block;
+    font-weight: normal;
+    line-height: 1.42857;
+    padding: 5px 20px;
+    white-space: nowrap;
+    text-align: left;
+
+}
+
+.dropdown-menu-cancel-collapse label {
+	width:100%;
+}
+.bidding-module-bidders-checkbox--subcontractor_bids--subcontractor_bid_id  {
+	margin: 0px 2px 3px 0px;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.bootstrapDropdownHeader {
+	font-size: 13px;
+}
+
+.bidding-module-email-modal-dialog-files-document-header {
+	font-weight: bold;
+	color: #333333;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+td.strike-through a {
+	text-decoration: line-through;
+	color: #999999;
+}
+table.bidding-module-email-modal-dialog-files-subcontractor-bid-documents-table {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+table.bidding-module-email-modal-dialog-files-subcontractor-bid-documents-table td{
+	padding: 5px 5px 5px 10px;
+}
+
+div.costCodeHeader {
+	font-size: 24px;
+	color: blue;
+}

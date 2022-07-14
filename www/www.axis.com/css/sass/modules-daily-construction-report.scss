@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+/* CSS Document */
+
+#dcrPreview {
+	/*
+	width:90%;
+	margin:0px auto;
+	overflow:hidden;
+	*/
+	font-weight: bold;
+	border: 1px solid #ccc;
+	padding: 15px;
+	border-radius: 0px 3px 3px 3px;
+	h1 {
+		font-family: Arial, "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #3b90ce;
+		font-size: 38px;
+		margin: 0px;
+		padding: 0px;
+		margin-bottom: 10px;
+		padding: 20px 0px;
+		border: 2px solid #d8d8d8;
+		border-left: none;
+		border-right: none;
+		/*text-align:center;*/
+	}
+	p {
+		font-size: 15px;
+		margin: 0px;
+		padding: 3px 0px;
+	}
+}
+
+.dcrPreviewBody {
+	clear: both;
+	overflow: hidden;
+}
+
+.dcrPreviewLeft {
+	width: 48%;
+	float: left;
+}
+
+.dcrPreviewRight {
+	width: 48%;
+	float: Right;
+}
+
+.dcrPreviewTable {
+	margin-top: 12px;
+	td {
+		color: #000000;
+		font-size: 14px;
+		font-weight: normal;
+		background: #f0f0f0;
+		/*height: 32px;*/
+		vertical-align: middle;
+		padding: 4px 20px;
+		/*line-height: 20px;*/
+	}
+	.dcrPreviewTableHeader {
+		color: #000000;
+		padding: 4px 10px;
+		font-size: 17px;
+		font-weight: bold;
+		background: #3487c7;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+.floatLeft {
+	float: left;
+}
+
+.floatRight {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.dcrPreviewTable .dcrPreviewImagecenter {
+	text-align: center;
+	padding: 20px;
+}

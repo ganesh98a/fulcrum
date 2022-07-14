@@ -1,0 +1,74 @@
+.rightClickMenu {
+	position: absolute;
+	width: 140px;
+	z-index: 1400;
+	border: solid 1px #CCC;
+	background: #EEE;
+	padding: 0px;
+	margin: 0px;
+	display: none;
+}
+.rightClickMenu li {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.rightClickMenu a {
+	color: #333;
+	text-decoration: none;
+	display: block;
+	line-height: 20px;
+	height: 20px;
+	background-position: 6px center;
+	background-repeat: no-repeat;
+	outline: none;
+	padding: 1px 5px;
+	padding-left: 28px;
+}
+.rightClickMenu li.hover a {
+	color: #FFF;
+	background-color: #3399FF;
+}
+.rightClickMenu li.disabled a {
+	color: #AAA;
+	cursor: default;
+}
+.rightClickMenu li.hover.disabled a {
+	background-color: transparent;
+}
+.rightClickMenu li.hidden a {
+	display: none;
+}
+.rightClickMenu li.separator {
+	border-top: solid 1px #CCC;
+}
+.rightClickMenu li.new a {
+	background-image: url(/images/jqueryFileTree/directory.png);
+}
+.rightClickMenu li.edit a {
+	background-image: url(/images/jqueryFileTree/css.png);
+}
+.rightClickMenu li.delete a, .rightClickMenu li.deletePermanent a {
+	background-image: url(/images/icons/file-manager/icon-trash-red.png);
+}
+.rightClickMenu li.upload a {
+	background-image: url(/images/icons/file-manager/icon-upload-green.png);
+}
+.rightClickMenu li.download a {
+	background-image: url(/images/icons/file-manager/icon-download-green.png);
+}
+.rightClickMenu li.details a {
+	background-image: url(/images/icons/file-manager/icon-info-blue-square.png);
+}
+.rightClickMenu li.zip a {
+	background-image: url(/images/jqueryFileTree/zip.png);
+}
+.rightClickMenu li.cancel a {
+	background-image: url(/images/icons/file-manager/icon-cancel-red.png);
+}
+.rightClickMenu li.restore a {
+	background-image: url(/images/icons/file-manager/icon-upload-blue-circle.png);
+}
+.rightClickMenu li.emptyTrash a {
+	background-image: url(/images/icons/file-manager/icon-recycle.jpg);
+}

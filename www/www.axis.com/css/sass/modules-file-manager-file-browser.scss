@@ -1,0 +1,513 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+
+.ui-menu-item {
+	font-size: 12px;
+	white-space: nowrap;
+	width: 100%;
+}
+
+#filenameSearch {
+	position: relative;
+	background: white url(/images/icons/search.jpeg) right no-repeat;
+	/*background-size: 17px auto;*/
+	margin-top: 2px;
+	padding: 3px 17px 5px 3px;
+	width: 300px;
+	z-index: 900;
+}
+
+#tblFileFolderPermissionMatrix {
+	font-size: 1em;
+	text-align: center;
+	td {
+		font-size: 1em;
+		text-align: center;
+		&.right {
+			font-size: 1em;
+			text-align: right;
+		}
+	}
+}
+
+#fileTreeMenu {
+	margin-right: 55px;
+	display: inline-block;
+}
+
+.fileSystemDetailsWrapper, .fileDetails {
+	border: 1px solid #ccc;
+}
+
+.fileSystemDetails {
+	margin-bottom: 5px;
+	th {
+		border-bottom: 1px solid #ccc;
+	}
+}
+
+#filePreview {
+	width: 100%;
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+ul.jqueryFileTree {
+	.ui-selecting {
+		background: #FECA40;
+	}
+	.ui-selected {
+		font-weight: bold;
+	}
+}
+
+/*
+ul.jqueryFileTree { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+ul.jqueryFileTree li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+*/
+
+.droppableActive {
+	background-color: lightyellow;
+	border: 1px solid #ccc;
+	font-weight: bold;
+}
+
+.droppableHover {
+	background-color: lightskyblue;
+	border: 1px dotted #999;
+	color: red;
+}
+
+ul.jqueryFileTree {
+	font-size: 1em;
+	line-height: 1.5em;
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	li {
+		position: relative;
+		list-style: none;
+		padding: 2px 0px 2px 0px;
+		margin: 0px 0px 0px 20px;
+		white-space: nowrap;
+		/*border: 1px solid green;*/
+		input {
+			position: absolute;
+			top: 0;
+			left: 20px;
+			width: 100%;
+		}
+	}
+	a {
+		color: #333;
+		text-decoration: none;
+		display: block;
+		padding: 0px 2px 0px 22px;
+		/*border: 1px solid white;*/
+	}
+}
+
+/*
+This is applied to each image style (see below)
+ul.jqueryFileTree a:hover {
+	background: #BDF url(/images/jqueryFileTree/directory.png) left top no-repeat;
+}
+*/
+/* Core Styles */
+
+.jqueryFileTree li {
+	&.directory {
+		background: url(/images/jqueryFileTree/directory.png) left 2px no-repeat;
+	}
+	&.expanded {
+		background: url(/images/jqueryFileTree/folder_open.png) left 2px no-repeat;
+	}
+	&.file {
+		background: url(/images/jqueryFileTree/file.png) left 2px no-repeat;
+	}
+	&.wait {
+		background: url(/images/jqueryFileTree/spinner.gif) left 2px no-repeat;
+	}
+	&.ext_3gp {
+		background: url(/images/jqueryFileTree/film.png) left 2px no-repeat;
+	}
+	&.ext_afp, &.ext_afpa, &.ext_asp, &.ext_aspx {
+		background: url(/images/jqueryFileTree/code.png) left 2px no-repeat;
+	}
+	&.ext_avi {
+		background: url(/images/jqueryFileTree/film.png) left 2px no-repeat;
+	}
+	&.ext_bat {
+		background: url(/images/jqueryFileTree/application.png) left 2px no-repeat;
+	}
+	&.ext_bmp {
+		background: url(/images/jqueryFileTree/picture.png) left 2px no-repeat;
+	}
+	&.ext_c, &.ext_cfm, &.ext_cgi {
+		background: url(/images/jqueryFileTree/code.png) left 2px no-repeat;
+	}
+	&.ext_com {
+		background: url(/images/jqueryFileTree/application.png) left 2px no-repeat;
+	}
+	&.ext_cpp {
+		background: url(/images/jqueryFileTree/code.png) left 2px no-repeat;
+	}
+	&.ext_css {
+		background: url(/images/jqueryFileTree/css.png) left 2px no-repeat;
+	}
+	&.ext_doc {
+		background: url(/images/jqueryFileTree/doc.png) left 2px no-repeat;
+	}
+	&.ext_exe {
+		background: url(/images/jqueryFileTree/application.png) left 2px no-repeat;
+	}
+	&.ext_gif {
+		background: url(/images/jqueryFileTree/picture.png) left 2px no-repeat;
+	}
+	&.ext_fla {
+		background: url(/images/jqueryFileTree/flash.png) left 2px no-repeat;
+	}
+	&.ext_h {
+		background: url(/images/jqueryFileTree/code.png) left 2px no-repeat;
+	}
+	&.ext_htm, &.ext_html {
+		background: url(/images/jqueryFileTree/html.png) left 2px no-repeat;
+	}
+	&.ext_jar {
+		background: url(/images/jqueryFileTree/java.png) left 2px no-repeat;
+	}
+	&.ext_jpg, &.ext_jpeg {
+		background: url(/images/jqueryFileTree/picture.png) left 2px no-repeat;
+	}
+	&.ext_js {
+		background: url(/images/jqueryFileTree/script.png) left 2px no-repeat;
+	}
+	&.ext_lasso {
+		background: url(/images/jqueryFileTree/code.png) left 2px no-repeat;
+	}
+	&.ext_log {
+		background: url(/images/jqueryFileTree/txt.png) left 2px no-repeat;
+	}
+	&.ext_m4p {
+		background: url(/images/jqueryFileTree/music.png) left 2px no-repeat;
+	}
+	&.ext_mov {
+		background: url(/images/jqueryFileTree/film.png) left 2px no-repeat;
+	}
+	&.ext_mp3 {
+		background: url(/images/jqueryFileTree/music.png) left 2px no-repeat;
+	}
+	&.ext_mp4, &.ext_mpg, &.ext_mpeg {
+		background: url(/images/jqueryFileTree/film.png) left 2px no-repeat;
+	}
+	&.ext_ogg {
+		background: url(/images/jqueryFileTree/music.png) left 2px no-repeat;
+	}
+	&.ext_pcx {
+		background: url(/images/jqueryFileTree/picture.png) left 2px no-repeat;
+	}
+	&.ext_pdf {
+		background: url(/images/jqueryFileTree/pdf.png) left 2px no-repeat;
+	}
+	&.ext_php {
+		background: url(/images/jqueryFileTree/php.png) left 2px no-repeat;
+	}
+	&.ext_png {
+		background: url(/images/jqueryFileTree/picture.png) left 2px no-repeat;
+	}
+	&.ext_ppt {
+		background: url(/images/jqueryFileTree/ppt.png) left 2px no-repeat;
+	}
+	&.ext_psd {
+		background: url(/images/jqueryFileTree/psd.png) left 2px no-repeat;
+	}
+	&.ext_pl, &.ext_py {
+		background: url(/images/jqueryFileTree/script.png) left 2px no-repeat;
+	}
+	&.ext_rb, &.ext_rbx, &.ext_rhtml {
+		background: url(/images/jqueryFileTree/ruby.png) left 2px no-repeat;
+	}
+	&.ext_rpm {
+		background: url(/images/jqueryFileTree/linux.png) left 2px no-repeat;
+	}
+	&.ext_ruby {
+		background: url(/images/jqueryFileTree/ruby.png) left 2px no-repeat;
+	}
+	&.ext_sql {
+		background: url(/images/jqueryFileTree/db.png) left 2px no-repeat;
+	}
+	&.ext_swf {
+		background: url(/images/jqueryFileTree/flash.png) left 2px no-repeat;
+	}
+	&.ext_tif, &.ext_tiff {
+		background: url(/images/jqueryFileTree/picture.png) left 2px no-repeat;
+	}
+	&.ext_txt {
+		background: url(/images/jqueryFileTree/txt.png) left 2px no-repeat;
+	}
+	&.ext_vb {
+		background: url(/images/jqueryFileTree/code.png) left 2px no-repeat;
+	}
+	&.ext_wav {
+		background: url(/images/jqueryFileTree/music.png) left 2px no-repeat;
+	}
+	&.ext_wmv {
+		background: url(/images/jqueryFileTree/film.png) left 2px no-repeat;
+	}
+	&.ext_xls {
+		background: url(/images/jqueryFileTree/xls.png) left 2px no-repeat;
+	}
+	&.ext_xml {
+		background: url(/images/jqueryFileTree/code.png) left 2px no-repeat;
+	}
+	&.ext_zip {
+		background: url(/images/jqueryFileTree/zip.png) left 2px no-repeat;
+	}
+	&.directory A:hover {
+		background: #bbddff url(/images/jqueryFileTree/directory.png) left top no-repeat;
+	}
+	&.expanded A:hover {
+		background: #bbddff url(/images/jqueryFileTree/folder_open.png) left top no-repeat;
+	}
+	&.file A:hover {
+		background: #bbddff url(/images/jqueryFileTree/file.png) left top no-repeat;
+	}
+	&.wait A:hover {
+		background: #bbddff url(/images/jqueryFileTree/spinner.gif) left top no-repeat;
+	}
+	&.ext_3gp A:hover {
+		background: #bbddff url(/images/jqueryFileTree/film.png) left top no-repeat;
+	}
+	&.ext_afp A:hover, &.ext_afpa A:hover, &.ext_asp A:hover, &.ext_aspx A:hover {
+		background: #bbddff url(/images/jqueryFileTree/code.png) left top no-repeat;
+	}
+	&.ext_avi A:hover {
+		background: #bbddff url(/images/jqueryFileTree/film.png) left top no-repeat;
+	}
+	&.ext_bat A:hover {
+		background: #bbddff url(/images/jqueryFileTree/application.png) left top no-repeat;
+	}
+	&.ext_bmp A:hover {
+		background: #bbddff url(/images/jqueryFileTree/picture.png) left top no-repeat;
+	}
+	&.ext_c A:hover, &.ext_cfm A:hover, &.ext_cgi A:hover {
+		background: #bbddff url(/images/jqueryFileTree/code.png) left top no-repeat;
+	}
+	&.ext_com A:hover {
+		background: #bbddff url(/images/jqueryFileTree/application.png) left top no-repeat;
+	}
+	&.ext_cpp A:hover {
+		background: #bbddff url(/images/jqueryFileTree/code.png) left top no-repeat;
+	}
+	&.ext_css A:hover {
+		background: #bbddff url(/images/jqueryFileTree/css.png) left top no-repeat;
+	}
+	&.ext_doc A:hover {
+		background: #bbddff url(/images/jqueryFileTree/doc.png) left top no-repeat;
+	}
+	&.ext_exe A:hover {
+		background: #bbddff url(/images/jqueryFileTree/application.png) left top no-repeat;
+	}
+	&.ext_gif A:hover {
+		background: #bbddff url(/images/jqueryFileTree/picture.png) left top no-repeat;
+	}
+	&.ext_fla A:hover {
+		background: #bbddff url(/images/jqueryFileTree/flash.png) left top no-repeat;
+	}
+	&.ext_h A:hover {
+		background: #bbddff url(/images/jqueryFileTree/code.png) left top no-repeat;
+	}
+	&.ext_htm A:hover, &.ext_html A:hover {
+		background: #bbddff url(/images/jqueryFileTree/html.png) left top no-repeat;
+	}
+	&.ext_jar A:hover {
+		background: #bbddff url(/images/jqueryFileTree/java.png) left top no-repeat;
+	}
+	&.ext_jpg A:hover, &.ext_jpeg A:hover {
+		background: #bbddff url(/images/jqueryFileTree/picture.png) left top no-repeat;
+	}
+	&.ext_js A:hover {
+		background: #bbddff url(/images/jqueryFileTree/script.png) left top no-repeat;
+	}
+	&.ext_lasso A:hover {
+		background: #bbddff url(/images/jqueryFileTree/code.png) left top no-repeat;
+	}
+	&.ext_log A:hover {
+		background: #bbddff url(/images/jqueryFileTree/txt.png) left top no-repeat;
+	}
+	&.ext_m4p A:hover {
+		background: #bbddff url(/images/jqueryFileTree/music.png) left top no-repeat;
+	}
+	&.ext_mov A:hover {
+		background: #bbddff url(/images/jqueryFileTree/film.png) left top no-repeat;
+	}
+	&.ext_mp3 A:hover {
+		background: #bbddff url(/images/jqueryFileTree/music.png) left top no-repeat;
+	}
+	&.ext_mp4 A:hover, &.ext_mpg A:hover, &.ext_mpeg A:hover {
+		background: #bbddff url(/images/jqueryFileTree/film.png) left top no-repeat;
+	}
+	&.ext_ogg A:hover {
+		background: #bbddff url(/images/jqueryFileTree/music.png) left top no-repeat;
+	}
+	&.ext_pcx A:hover {
+		background: #bbddff url(/images/jqueryFileTree/picture.png) left top no-repeat;
+	}
+	&.ext_pdf A:hover {
+		background: #bbddff url(/images/jqueryFileTree/pdf.png) left top no-repeat;
+	}
+	&.ext_php A:hover {
+		background: #bbddff url(/images/jqueryFileTree/php.png) left top no-repeat;
+	}
+	&.ext_png A:hover {
+		background: #bbddff url(/images/jqueryFileTree/picture.png) left top no-repeat;
+	}
+	&.ext_ppt A:hover {
+		background: #bbddff url(/images/jqueryFileTree/ppt.png) left top no-repeat;
+	}
+	&.ext_psd A:hover {
+		background: #bbddff url(/images/jqueryFileTree/psd.png) left top no-repeat;
+	}
+	&.ext_pl A:hover, &.ext_py A:hover {
+		background: #bbddff url(/images/jqueryFileTree/script.png) left top no-repeat;
+	}
+	&.ext_rb A:hover, &.ext_rbx A:hover, &.ext_rhtml A:hover {
+		background: #bbddff url(/images/jqueryFileTree/ruby.png) left top no-repeat;
+	}
+	&.ext_rpm A:hover {
+		background: #bbddff url(/images/jqueryFileTree/linux.png) left top no-repeat;
+	}
+	&.ext_ruby A:hover {
+		background: #bbddff url(/images/jqueryFileTree/ruby.png) left top no-repeat;
+	}
+	&.ext_sql A:hover {
+		background: #bbddff url(/images/jqueryFileTree/db.png) left top no-repeat;
+	}
+	&.ext_swf A:hover {
+		background: #bbddff url(/images/jqueryFileTree/flash.png) left top no-repeat;
+	}
+	&.ext_tif A:hover, &.ext_tiff A:hover {
+		background: #bbddff url(/images/jqueryFileTree/picture.png) left top no-repeat;
+	}
+	&.ext_txt A:hover {
+		background: #bbddff url(/images/jqueryFileTree/txt.png) left top no-repeat;
+	}
+	&.ext_vb A:hover {
+		background: #bbddff url(/images/jqueryFileTree/code.png) left top no-repeat;
+	}
+	&.ext_wav A:hover {
+		background: #bbddff url(/images/jqueryFileTree/music.png) left top no-repeat;
+	}
+	&.ext_wmv A:hover {
+		background: #bbddff url(/images/jqueryFileTree/film.png) left top no-repeat;
+	}
+	&.ext_xls A:hover {
+		background: #bbddff url(/images/jqueryFileTree/xls.png) left top no-repeat;
+	}
+	&.ext_xml A:hover {
+		background: #bbddff url(/images/jqueryFileTree/code.png) left top no-repeat;
+	}
+	&.ext_zip A:hover {
+		background: #bbddff url(/images/jqueryFileTree/zip.png) left top no-repeat;
+	}
+}
+
+/* File Extensions */
+/* Core Styles Hover */
+/* File Extensions Hover */
+/* Generic context menu styles */
+
+.rightClickMenu {
+	position: absolute;
+	width: 120px;
+	z-index: 1400;
+	border: solid 1px #CCC;
+	background: #EEE;
+	padding: 0px;
+	margin: 0px;
+	display: none;
+	li {
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+	}
+	a {
+		color: #333;
+		text-decoration: none;
+		display: block;
+		line-height: 20px;
+		height: 20px;
+		background-position: 6px center;
+		background-repeat: no-repeat;
+		outline: none;
+		padding: 1px 5px;
+		padding-left: 28px;
+	}
+	li {
+		&.hover a {
+			color: #FFF;
+			background-color: #3399FF;
+		}
+		&.disabled a {
+			color: #AAA;
+			cursor: default;
+		}
+		&.hover.disabled a {
+			background-color: transparent;
+		}
+		&.hidden a {
+			display: none;
+		}
+		&.separator {
+			border-top: solid 1px #CCC;
+		}
+		&.new a {
+			background-image: url(/images/jqueryFileTree/directory.png);
+		}
+		&.edit a {
+			background-image: url(/images/jqueryFileTree/css.png);
+		}
+		&.delete a, &.deletePermanent a {
+			background-image: url(/images/jqueryFileTree/cut.png);
+		}
+		&.upload a {
+			background-image: url(/images/buttons/button-upload.png);
+		}
+		&.download a {
+			background-image: url(/images/jqueryFileTree/file.png);
+		}
+		&.zip a {
+			background-image: url(/images/jqueryFileTree/zip.png);
+		}
+		&.quit a {
+			background-image: url(/images/jqueryFileTree/door.png);
+		}
+		&.restore a {
+			background-image: url(/images/buttons/button-upload.png);
+		}
+	}
+}
+
+/*
+	Adding Icons
+
+	You can add icons to the context menu by adding
+	classes to the respective li element(s)
+*/

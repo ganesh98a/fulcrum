@@ -1,0 +1,308 @@
+.select-role {
+	display: block;
+	margin: 30px 0 0; 
+	width: 100%;
+	float: left;
+}
+.select-role .topselect {
+	width: 55%;
+	display: block;
+	margin-bottom: 15px;
+	float: left;
+	clear: both;
+	overflow: hidden;
+}
+.select-role .topselect select {
+    float: left;
+}
+.select-role .subhead {
+	font-weight: bold;
+	color: #666666;
+	float: left;
+	margin-top: 0;
+	margin-right: 25px;
+}
+.select-role .main-head {
+	font-weight: bold;
+	color: #3b90ce;
+	float: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-right: 25px;
+}
+.block-section {
+	width: 100%;
+	float: left;
+	display: block;
+	margin: 0px 0 20px;
+}
+.m-b-0 {
+	margin-bottom: 0 !important;
+}
+.m-t-20 {
+	margin-top: 20px !important;
+}
+.m-t-10 {
+	margin-top: 10px !important;
+}
+.select-role span {
+	margin-right: 5px;
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.select-role .panel span {
+	margin-bottom: 15px;
+	width: 19%;
+	float: left;
+	text-indent: -24px;
+	padding: 0 15px 0 25px;
+	word-break: break-word;
+}
+.select-role .panel {
+	border: 1px solid #bcb9b9;
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	float: left;
+	padding: 5px 15px;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-content: flex-end;
+}
+.select-role input[type="checkbox"] {
+    margin-right:7px;
+}
+
+.table-theme thead {
+    background: #3b90ce;
+}
+.table-theme th,
+.table-theme td {
+	padding: 5px;
+}
+.table-theme th {
+	color: #ffffff;
+	border-color: #000000;
+	min-width: 50px;
+	max-width: 80px;
+}
+.table-theme td {
+    white-space: nowrap;
+}
+.manageRole .fs-default {
+	display: block !important;
+	margin-bottom: 15px;
+	width: 30% !important;
+	border: 1px solid #666;
+}
+
+.filrol
+{
+	cursor:pointer;
+}
+.perseleted
+{
+	color : #8b8e90;
+}
+.select-role .fs-dropdown {
+	width: 450px;
+}
+
+/* check box design*/
+.control {
+	 position: relative;
+	 padding-left: 15px;
+	 cursor: pointer;
+	 float:none;
+}
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	top: 0;
+	bottom: 0;
+}
+ .control input:checked ~ .control__indicator {
+	 background: #007bf7;
+}
+ .control:hover input:not([disabled]):checked ~ .control__indicator {
+	 background: #007bf7;
+}
+ .control input:checked:focus ~ .control__indicator {
+	 background: #007bf7;
+}
+ .control input:disabled ~ .control__indicator {
+	 background: #e6e6e6;
+	 opacity: 0.6;
+	 pointer-events: none;
+}
+ .control__indicator {
+	 position: absolute;
+	 top: 2px;
+	 left: 0;
+	 height: 14px;
+	 width: 14px;
+   border: 1px solid #c9c5c5;
+	 background: #e6e6e6;
+}
+ .control--radio .control__indicator {
+	 border-radius: 50%;
+}
+ .control__indicator:after {
+	 content: '';
+	 position: absolute;
+	 display: none;
+}
+ .control input:checked ~ .control__indicator:after {
+	 display: block;
+}
+ .control--checkbox .control__indicator:after {
+	 left: 5px;
+	 top: 0px;
+	 width: 3px;
+	 height: 9px;
+	 border: solid #fff;
+	 border-width: 0 2px 2px 0;
+	 transform: rotate(45deg);
+}
+ .control--checkbox input:disabled ~ .control__indicator:after {
+	 border-color: #7b7b7b;
+}
+ .control--radio .control__indicator:after {
+	 left: 7px;
+	 top: 7px;
+	 height: 6px;
+	 width: 6px;
+	 border-radius: 50%;
+	 background: #fff;
+}
+ .control--radio input:disabled ~ .control__indicator:after {
+	 background: #7b7b7b;
+}
+/* End of checkbox */
+
+.nonspecify {
+	background: #8B8E90 !important;
+}
+
+#rarepermission {
+    margin-bottom: 10px;
+}
+
+.prewrap
+{
+	white-space:normal !important;
+	text-align: center;
+	min-width: 100px;
+	vertical-align: middle;
+}
+.nonProSpecTable {
+	display: table;
+}
+.nonProSpecTableOne{
+    width: 300px;
+    display: table-cell;
+    vertical-align: top;
+}
+.nonProSpecTableOne th,
+.nonProSpecTableTwo th {
+    height: 60px;
+}
+.nonProSpecTableTwo{
+	max-width: 770px;
+    display: table-cell;
+    vertical-align: top;
+	overflow-x: auto;		
+	float: left;
+}	
+
+.nonProSpecTableTwo {
+  scrollbar-color: Gainsboro White ;
+  scrollbar-width: thin;
+}
+.nonProSpecTableTwo::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+}
+.nonProSpecTableTwo::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+.nonProSpecTableTwo::-webkit-scrollbar-thumb {
+    background: #999;
+}
+.nonProSpecTableTwo::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+.gaVerPerTd {
+	vertical-align: middle;
+}
+.borderRight {
+	border-right: 1px solid #000000;
+}
+
+/* Slanted Table Headers - Start */
+th.rotate-45 {
+    height: 160px;
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    position: relative;
+    vertical-align: bottom;
+    padding: 0;
+    font-size: 12px;
+    line-height: 0.8;
+}
+th.rotate-45 div{
+	position: relative;
+	top: 0px;
+	left: -80px; /* 80 * tan(45) / 2 = 40 where 80 is the height on the cell and 45 is the transform angle*/
+	height: 100%;
+	-ms-transform:skew(45deg,0deg);
+	-moz-transform:skew(45deg,0deg);
+	-webkit-transform:skew(45deg,0deg);
+	-o-transform:skew(45deg,0deg);
+	transform:skew(45deg,0deg);
+	overflow: hidden;
+}
+th.rotate-45 span{
+	-ms-transform:skew(-45deg,0deg) rotate(45deg);
+	-moz-transform:skew(-45deg,0deg) rotate(45deg);
+	-webkit-transform:skew(-45deg,0deg) rotate(45deg);
+	-o-transform:skew(-45deg,0deg) rotate(45deg);
+	transform:skew(-45deg,0deg) rotate(45deg);
+	position: absolute;
+	bottom: 120px; /* 40 cos(45) = 28 with an additional 2px margin*/
+	left: -25px; /*Because it looked good, but there is probably a mathematical link here as well*/
+	display: inline-block;
+	width: 100%;
+	width: 85px; /* 80 / cos(45) - 40 cos (45) = 85 where 80 is the height of the cell, 40 the width of the cell and 45 the transform angle*/
+	text-align: left;
+	white-space: nowrap; /*whether to display in one line or not*/
+}
+
+.table-striped-column > thead > tr th.pspecify  div {
+	color: #3b90ce;
+	/* background-color: #d9edf7; */
+	background-color: #ffffff;
+	border: 0.5px solid grey;
+}
+.table-striped-column > thead > tr th.nonspecifyTable  div {
+	color: grey;
+	/* background-color: #eee; */
+	background-color: #ffffff;
+	border: 0.5px solid grey;	
+}
+/* .table-striped-column > tbody > tr td:nth-of-type(even) {
+    background-color: #eee;
+} */
+.table-striped-column tbody td {
+    border: 1px solid #989898;
+    padding: 6px 4px;
+}
+/* Slanted Table Headers -- End */

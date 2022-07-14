@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+body {
+	/*padding: 10px;*/
+}
+
+#tblBudgetAmounts {
+	width: 100%;
+	min-width: 300px;
+}
+#tblBudgetAmounts td {
+	padding: 3px 10px 3px 0;
+}
+
+.linkedHeader {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-weight: bold;
+}
+
+.budgetName {
+	background: #efefef;
+}
+
+input {
+	font-size: .9em;
+	margin: 1px;
+}
+
+#spreadTable th, #spreadTable td {
+	padding: 5px;
+	vertical-align: middle;
+	border-color: #999999;
+}
+
+/*
+.spread-td {
+	padding: 5px;
+	vertical-align: middle;
+}
+*/
+.input-unit-qty {
+	width: 35px;
+	text-align: right;
+}
+
+.input-unit {
+	width: 120px;
+}
+
+.input-unit-price, .input-unit-total, .totals {
+	text-align: right;
+	width: 90px;
+}
+
+input.unitTotal {
+	text-align: right;
+}
+
+.input-preferred-sub {
+
+}
+
+#divSpreadButtons input {
+	margin: 0 15px 15px 0;
+}
+
+.preferredSub {
+	background: #95b42e;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#95b42e', endColorstr='#afd137') !important;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#95b42e), to(#afd137));
+	background: -webkit-linear-gradient(top, #95b42e, #afd137);
+	background: -moz-linear-gradient(top, #95b42e, #afd137);
+	background: -ms-linear-gradient(top, #95b42e, #afd137);
+	background: -o-linear-gradient(top, #95b42e, #afd137);
+}
+
+.rightBorder {
+	border-right: 2px solid #000000 !important;
+}
+.pdfwidth
+{
+	max-width: 400px;
+	height: 19px;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+.border-top-dark {
+    border-top: 2px solid #000;
+}
+.border-bottom-dark {
+    border-bottom: 2px solid #000;
+}
+
+.border-2 {
+	border: 2px solid #000000 !important;
+}
+
+.bidderHeaderDetails {
+	text-align: center;
+}
+
+.rowBidItems {
+	background: #fff;
+}
+.subtotal-row {
+	background-color: #E6E6E6;
+}
+.subtotal-row .input-unit, .subtotal-row .input-unit-qty, .subtotal-row .input-unit-price, .subtotal-row .input-unit-exclude {
+	display: none;
+}
+
+.sortBars {
+	/*cursor: hand;*/
+	/*cursor: pointer;*/
+}
+
+.redNumber {
+	color: red;
+}
+
+#bidSpreadApprovalModalTopSection td {
+	vertical-align: middle;
+}
+
+#bidSpreadApprovalModal ul {
+	margin: 0px 0px 10px;
+	padding: 0px;
+}
+
+#tableBidSpreadApprovalModal td {
+	padding: 0px 10px;
+	vertical-align: middle;
+}
+
+#tableSavedBidSpreadsheets {
+	border-bottom: 0;
+}
+
+/*
+#tableSavedBidSpreadsheets tr:nth-child(odd) td:nth-child(odd) {
+	background:url(/images/backgrounds/table-body-odd-row-odd-column.gif) top repeat-x;
+}
+*/
+
+
+/*background:url(/images/backgrounds/table-body-odd-row-even-column.gif) top repeat-x;*/
+/*
+#tableSavedBidSpreadsheets tr:nth-child(odd) td:nth-child(even) {
+	background-color: #f5f5f5;
+}
+#tableSavedBidSpreadsheets tr:nth-child(even) td:nth-child(odd) {
+	background: url(/images/backgrounds/table-body-even-row-odd-column.gif) top repeat-x;
+}
+#tableSavedBidSpreadsheets tr:nth-child(even) td:nth-child(even) {
+	background: url(/images/backgrounds/table-body-even-row-even-column.gif) top repeat-x;
+}
+
+#tableBidSpreadNotes tbody tr:first-child {
+	background: url(/images/backgrounds/table-body-first-row.gif) 50% 0% repeat-x whitesmoke;
+}
+*/
+
+
+#tableBidSpreadNotes a {
+	padding: 0 4px;
+}
+
+.label-no-style {
+	float: none;
+	text-align: initial;
+	margin-right: 0px;
+	padding-top: 0px;
+	min-width: 0px;
+	font-size: initial;
+}
+
+.tdGreenGradient {
+	background: #cad88f url(/images/backgrounds/table-header-all-columns.gif) top repeat-x;
+}
+
+.bidSpreadDialogHeader {
+	background: #3b90ce;
+	color: white;
+}
+
+.entypo-block {
+	font-size: 70%;
+}
+.entypo-block:before {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.labelPreferedSubcontractor {
+	float: none;
+	text-align: right;
+	margin-right: 0;
+	padding-top: 0;
+	min-width: 130px;
+	font-size: 13px;
+}
+
+.bid_item {
+	/*width: 95%;*/
+	 max-width: 350px !important;
+	overflow-wrap: break-word;
+}
+.bidarea {
+    width: 95%;
+    min-height: 19px;
+    /*resize: none;*/
+    /*height: 34px;*/
+}
+.greenBackground {
+	background-color: #92bd2a;
+	border: 3px solid #d2e68e;
+}
+.grayBackground {
+	background-color: #909090;
+	border:3px solid #c7c7c7;
+}
+.fieldset {
+	padding: 8px;
+	border: 1px solid #c0c0c0;
+}
+
+input {
+	font-size: 13px;
+}
+
+.smallLink {
+	font-size: 11px;
+	font-weight: normal;
+}
+
+.preferred-sub-link {
+	font-size: 13px;
+}
+
+#tableBidItems tr {
+	border-bottom: 1px solid #ccc;
+}
+
+.sc_bid_item {
+	max-width: 85%;
+}
+
+#divModalWindow {
+	font-size: 0.9em;
+}
+#tableSubcontractDetails select, .tableCreateSubcontract select {
+	width: 400px;
+	padding: 4px;
+}
+#tableSubcontractDetails input[type=text], .tableCreateSubcontract input[type=text] {
+	width: 388px;
+	padding: 4px;
+}
+#tableSubcontractDetails th, .tableCreateSubcontract th {
+	text-align: right;
+}
+
+.bs-dropdown-notitle {
+	padding: 1px 4px;
+	margin-bottom: 2px;
+	background: #fff;
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	margin-left: 7px;
+}

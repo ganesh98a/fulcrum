@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+
+.input-costCode {
+	width: 70px;
+}
+
+.input-lineItem {
+	width: 200px;
+}
+
+.input-scheduled, .input-forecasted {
+	text-align: right;
+	width: 130px;
+}
+
+.input-subcontracted, .input-variance {
+	width: 130px;
+	text-align: right;
+}
+
+.input-total {
+	font-weight: bold;
+}
+
+#tableSubcontractDetails {
+	th {
+		text-align: right;
+	}
+	input {
+		width: 400px;
+		padding: 4px;
+		&[type=text] {
+			width: 388px;
+		}
+	}
+	select {
+		width: 400px;
+		padding: 4px;
+	}
+}
+
+#divModalWindow {
+	font-size: 0.9em;
+}

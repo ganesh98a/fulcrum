@@ -1,0 +1,46 @@
+<?php /* Smarty version Smarty-3.0.8, created on 2021-12-15 09:02:23
+         compiled from "C:/xampp5.6/htdocs/full_delay/fulcrum/www/www.axis.com/include/templates/modules-submittals-registry.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:2244561b9a10eb73904-16495264%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '6d254aea25b95d4cfe76a1eb32adec0c280e8120' => 
+    array (
+      0 => 'C:/xampp5.6/htdocs/full_delay/fulcrum/www/www.axis.com/include/templates/modules-submittals-registry.tpl',
+      1 => 1639554850,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2244561b9a10eb73904-16495264',
+  'function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+)); /*/%%SmartyHeaderCode%%*/?>
+<div id="sub_change_order" class="custom_delay_padding grid_view custom_datatable_style">
+<?php if ((isset($_smarty_tpl->getVariable('htmlMessages',null,true,false)->value))&&!empty($_smarty_tpl->getVariable('htmlMessages',null,true,false)->value)){?>
+		<div><?php echo $_smarty_tpl->getVariable('htmlMessages')->value;?>
+</div>
+	<?php }else{ ?>
+		<div>
+
+		<?php if (($_smarty_tpl->getVariable('userCanManageSubOrder')->value)){?>
+		<input type="button" onclick="Submittalsregistry__loadCreateSuDialog(null);setTimeout('Submittals__automaticRecipient(<?php echo $_smarty_tpl->getVariable('primary_contact_id')->value;?>
+,\'<?php echo $_smarty_tpl->getVariable('primary_name')->value;?>
+\')', 2000);" value="Create submittal registry" style="margin-bottom:15px">		
+		<?php }?>	
+	</div>
+	<div id="OrderTable"><?php echo $_smarty_tpl->getVariable('OrderTable')->value;?>
+</div>
+	<div id="divCreateOrder" class="hidden"></div>
+	<div id="divCreateCo" class="hidden"></div>
+	<input type="hidden" id="active_change_order_id" value="">
+	<input type="hidden" id="active_change_order_draft_id" value="">
+	<input type="hidden" id="active_change_order_notification_id" value="">
+	
+	<div id="viewsubchange" class="modal"></div>
+
+	<div id="dialog-confirm"></div>
+	<?php }?>
+</div>
+	

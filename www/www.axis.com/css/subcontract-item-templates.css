@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+body {
+	font-family: Helvetica;
+	font-size: 14px;
+}
+
+table {
+	font-family: Helvetica;
+	font-size: 14px;
+	page-break-before: auto;
+}
+
+td {
+	text-align: justify;
+	line-height: 13pt;
+}
+
+p {
+	line-height: 13pt;
+}
+
+.waiverTitle, .waiverWarningBox {
+	font-family: Helvetica;
+	font-size: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.waiverSubTitle {
+	font-family: Helvetica;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.waiverWarningBox {
+	border: 1px solid black;
+	text-align: justify;
+	padding: 5px;
+	margin: 5px;
+	line-height: 18px;
+}
+
+.populateTable {
+	width: 80%;
+}
+
+.populateLine {
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+
+.sigBlock {
+	font-family: Helvetica;
+	font-size: 12px;
+	vertical-align: top;
+}
+
+/* LONG HAND STYLES --------------------------------------------------------- */
+.textAlignLeft { text-align: left; }
+.textAlignCenter { text-align: center; }
+.textAlignRight { text-align: right; }
+.textAlignJustify { text-align: justify; }
+
+.verticalAlignTop { vertical-align: top; }
+.verticalAlignMiddle { vertical-align: middle; }
+.verticalAlignBottom { vertical-align: bottom; }
+
+.verticalAlignTopImportant { vertical-align: top !important; }
+.verticalAlignMiddleImportant { vertical-align: middle !important; }
+.verticalAlignBottomImportant { vertical-align: bottom !important; }
+
+.borderTopBlack { border-top: 1px solid black; }
+.borderRightBlack { border-right: 1px solid black; }
+.borderBottomBlack { border-bottom: 1px solid black; }
+.borderLeftBlack { border-left: 1px solid black; }
+
+.displayNone { display: none; }
+.displayInlineBlock { display: inline-block; }
+.displayBlock { display: block; }
+.displayInline { display: inline; }
+
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.floatNone { float: none; }
+
+.tdDollarCell {
+	width: 20%;
+	border-bottom: 1px solid black;
+}
+.tdLabelCell {
+	width: 20%;
+	white-space: nowrap;
+}
+.tdSignatureLineCell {
+	width: 65%;
+	border-bottom: 1px solid black;
+}

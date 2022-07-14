@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/*******************************************************************************
+
+[vim]
+vim: set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4:
+
+[emacs]
+Local variables:
+tab-width: 4
+c-basic-offset: 4
+c-hanging-comment-ender-p: nil
+c-indent-level: 4
+indent-tabs-mode: t
+tab-stop-list: '(4 8 12 16 20 24 28 32 36 40 44 48 52 56 60)
+End:
+
+*******************************************************************************/
+
+.expandCollapseContainer {
+    display: inline-block;
+    float: left;
+    height: 100%;
+	overflow: hidden;
+	padding: 2px 5px 2px 2px;
+	vertical-align: middle;
+}
+
+.expandCollapseImage {
+	border: 0px;
+	display: inline-block;
+	height: 10px;
+	margin: 0px;
+	padding: 0px;
+	width: 10px;
+}
+
+.expandCollapse:hover {
+	text-decoration: none;
+}
+
+.iconExpand {
+	background-image: url("/images/icons/icon-expand.gif");
+	background-repeat: no-repeat;
+	height: 15px;
+	padding: 2px;
+	vertical-align: baseline;
+	width: 15px;
+}
+
+.expandCollapseIcon {
+	background-image: url("images/icon-expand.gif");
+	background-position: -32px -16px;
+	background-repeat: no-repeat;
+	height: 16px;
+	margin: 0px;
+	overflow: hidden;
+	padding: 0px;
+	text-indent: -99999px;
+	vertical-align: middle;
+	width: 16px;
+}

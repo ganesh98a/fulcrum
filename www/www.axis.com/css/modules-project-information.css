@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+.buttonProjectInfoWidget {
+	font-size: 15px;
+	height: 35px;
+}
+
+.moduleProjectInformation input[type='checkbox'] {
+	margin: 0px;
+	padding: 0px;
+	width: 18px;
+}
+
+.moduleProjectInformation input[type='text'] {
+	background: #fff url(/images/backgrounds/form-input.gif) repeat-x;
+	border: 2px solid #b2b2b2;
+	color: #4e4f51;
+	float: left;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	height: 25px;
+	padding: 0px 0px 0px 2px;
+	width: 92.5%;
+}
+
+.moduleProjectInformationDropdown {
+	color: #4e4f51;
+	font-size: 14px;
+	height: auto;
+	line-height: 30px;
+	margin: 0px;
+	padding: 7px 3px;
+	text-align: left;
+	vertical-align: middle;
+}
